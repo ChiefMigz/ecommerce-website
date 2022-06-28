@@ -17,6 +17,7 @@ app.use(fileUpload({
 
 // Routes
 app.use('/user', require('./routes/userRouter'))
+app.use('/api', require('./routes/categoryRouter'))
 
 // Connect to mongodb
 const URI = process.env.MONGODB_URL;
@@ -24,10 +25,7 @@ mongoose.connect(URI, {
     useNewUrlParser: true, 
     useUnifiedTopology: true
 }, err => {
-    if (err){
-        console.log('Something went wrong')
-        throw err;
-    };
+    if (err) throw err;
     console.log('Connected to MongoDB')
 })
 
