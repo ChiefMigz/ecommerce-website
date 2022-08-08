@@ -27,8 +27,9 @@ const categoryCtrl = {
     },
     deleteCategory: async (req, res) => {
         try {
-            const test = await Category.findById(req.params.id)
-            res.json({msg: 'Deleted a category.'})
+            const result = await Category.findByIdAndDelete(req.params.id)
+            if (!result) return res.status(500).json({msg: 'Category does not exist!'})
+            res.json({msg: 'Category deleted sucessfully!'})
         } catch (err) {
             return err.status(500).json({msg: err.message})
         }
