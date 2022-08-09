@@ -7,22 +7,23 @@ const userCtrl = {
         try {
             const {name, email, password} = req.body;
 
-            const user = await Users.findOne({email})
-            if (user) return res.status(400).json({msg: 'The email already exists.'})
+            const user = await Users.findOne({email}) // Wait until database query for particular email is finished
+            if (user) return res.status(400).json({msg: 'The email already exists.'}) // Check if the email is already in database
 
-            if (password.length < 6)
+            if (password.length < 6) // Check if password is more than 6 characters
                 return res.status(400).json({msg: 'Password is less than 7 characters long.'})
 
             // Password Encryption
             const passwordHash = await bcrypt.hash(password, 10)
+            // Create a new user
             const newUser = new Users({
                 name, email, password: passwordHash
-            })
+            }) 
             
-            // Save to Mongodb
+            // Save new user to MongoDB
             await newUser.save()
 
-            // Then create jsonwebtoken to authentication
+            // Create jsonwebtoken and authentication
             const accessToken = createAccessToken({id: newUser._id})
             const refreshToken = createRefreshToken({id: newUser._id})
 
