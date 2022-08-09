@@ -3,6 +3,7 @@ const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 
 const userCtrl = {
+    // Create a new user with default
     register: async (req, res) => {
         try {
             const {name, email, password} = req.body;
@@ -38,6 +39,8 @@ const userCtrl = {
             return res.status(500).json({msg: err.message})
         }
     },
+    
+    // Authorize user if credential is valid
     login: async (req, res) => {
         try {
             const {email, password} = req.body;
@@ -64,7 +67,8 @@ const userCtrl = {
             return res.status(500).json({msg: err.message})
         }
     },
-
+    
+    // Clear user token
     logout: async (req, res) => {
         try {
             res.clearCookie('refreshtoken', {path: '/user/refresh_token'})
@@ -73,6 +77,8 @@ const userCtrl = {
             return res.status(500).json({msg: 'Please Login or Register.'})
         }
     },
+    
+    // Renew user token
     refreshToken: (req, res) => {
         try {
             const rf_token = req.cookies.refreshtoken;
@@ -87,6 +93,8 @@ const userCtrl = {
             return res.status(500).json({msg: error.message})
         }
     },
+    
+    // Get particular user, then show
     getUser: async (req, res) => {
         try {
             const user = await Users.findById(req.user.id).select('-password');
@@ -97,6 +105,8 @@ const userCtrl = {
         }
     }
 }
+
+// Validity of user access tokens
 
 const createAccessToken = (user) => {
     return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {expiresIn: '1d'})
