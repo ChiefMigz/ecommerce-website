@@ -61,7 +61,10 @@ const userCtrl = {
                 path: '/user/refresh_token'
             })
 
-            res.json({accessToken})
+            res.json({
+                status: 'Success',
+                accessToken: accessToken
+            })
             
         } catch (err) {
             return res.status(500).json({msg: err.message})
