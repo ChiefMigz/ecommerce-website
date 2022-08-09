@@ -1,6 +1,7 @@
 const Category = require('../models/categoryModel')
 
 const categoryCtrl = {
+    // Get all catergories in MongoDB
     getCategories: async (req, res) => {
         try {
             const categories = await Category.find()
@@ -9,6 +10,7 @@ const categoryCtrl = {
             res.status(500).json({msg: err.message});
         }
     },
+    // Create a new category, then add to MongoDB
     createCategory: async (req, res) => {
         try {
             // If user category is 1, then user is admin
@@ -19,12 +21,13 @@ const categoryCtrl = {
 
             const newCategory = new Category({name})
 
-            await newCategory.save()
+            await newCategory.save() // Save to MongoDB
             res.json({msg: 'Category created successfuly.'})
         } catch (err) {
             return err.status(500).json({msg: err.message})
         }
     },
+    // Delete a catergory via req id
     deleteCategory: async (req, res) => {
         try {
             const result = await Category.findByIdAndDelete(req.params.id)
@@ -34,6 +37,7 @@ const categoryCtrl = {
             return err.status(500).json({msg: err.message})
         }
     },
+    // Update category via req id
     updateCategory: async (req, res) => {
         try {
             const {name} = req.body;
