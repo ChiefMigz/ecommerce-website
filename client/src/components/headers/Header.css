@@ -53,15 +53,15 @@ ul {
     stroke-width: 2px;
 }
 
-.cart-icon {
-    position: relative;
-}
-
 .menu >*:hover {
     transition-property: transform;
     transform: scale(1.2);
     transition-duration: 0.5s;
     transition-delay: 150ms;
+}
+
+.cart-icon {
+    position: relative;
 }
 
 .cart-icon span {
