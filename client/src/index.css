@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-shadow: 0 0 35 #eee;
+}
+
+@import url(./components/headers/Header.css);
+@import url(./components/headers/overlays/Overlay.css);
