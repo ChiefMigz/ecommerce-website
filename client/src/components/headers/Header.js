@@ -7,7 +7,7 @@ import {FaShoppingCart, FaUserAlt, FaLocationArrow} from 'react-icons/fa';
 import Logo from './icons/icon.png'
 
 const Header = () => {  
-    const value = useContext(GlobalState)
+    //const value = useContext(GlobalState)
     const [profileOverlay, setProfileOverlay] = useState(false);
     const handleClick = () => setProfileOverlay(!profileOverlay);
     return (
@@ -15,7 +15,7 @@ const Header = () => {
                 
                 {/* Website Logo */}
                 <div>
-                    <img src={Logo} alt="Logo" style={{width: '60px'}}/>
+                    <img src={Logo} alt="Logo" style={{width: '70px'}}/>
                 </div>
                 
                 {/* Links */}
@@ -28,23 +28,23 @@ const Header = () => {
                             <Link to="/">About</Link>
                         </li>
                         <li>
-                            <Link to="/">Cupcakes</Link>
+                            <Link to="/products">Cupcakes</Link>
                         </li>
                         <li>
-                            <Link to="/">About Us</Link>
+                            <Link to="/">Contact Us</Link>
                         </li>
                     </ul>
                 </div>
                 <div className='menu'>
                     <div className='cart-icon'>
                         <span>0</span>
-                        <FaShoppingCart size={30}/>
+                        <FaShoppingCart size={32}/>
                     </div>
                     <div onClick={() => handleClick()}>
-                        <FaUserAlt size={30}/>
+                        <FaUserAlt size={32}/>
                     </div>
-                    <div>
-                        <FaLocationArrow size ={30}/>
+                    <div className='location-icon'>
+                        <FaLocationArrow size ={32}/>
                     </div>
                 </div>
                 <div style={{display: profileOverlay ? 'block' : 'none'}}><ProfileOverlay/></div>
