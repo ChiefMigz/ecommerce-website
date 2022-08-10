@@ -5,7 +5,7 @@ import {Route, Routes} from 'react-router-dom';
 
 const Pages = () => {
     return ( 
-        <div>
+        <div style={{padding: '20px'}}>
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/products' element={<Products/>}/>
