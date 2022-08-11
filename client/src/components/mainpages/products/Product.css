@@ -5,3 +5,7 @@
     flex-wrap:wrap;
     margin: 0 auto;
 }
+
+.card a {
+    text-decoration: none;
+}

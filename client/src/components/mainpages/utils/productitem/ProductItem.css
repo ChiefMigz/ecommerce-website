@@ -1,7 +1,7 @@
 .card {
     position: relative;
-    width: 320px;
-    height: 480px;
+    width: 250px;
+    height: 380px;
     background: #ffffff;
     border-radius: 20px;
     overflow: hidden;
@@ -11,6 +11,10 @@
     background-color: #FFE4E4;
     transform:translateY(20);
     transition: 1s;
+  }
+
+  .card small {
+    text-decoration: underline;
   }
     
   .card .imgBox {
@@ -22,18 +26,7 @@
     padding-top: 20px;
     z-index: 1;
   }
-  /*
-  .card .imgBox img {
-      max-width: 100%;
-      
-      transition: .5s;
-  }
-  
-  .card:hover .imgBox img {
-      max-width: 50%;
-        
-  }
-  */
+
   .card .contentBox {
     position: relative;
     padding: 20px;
@@ -45,7 +38,7 @@
   }
   
   .card .contentBox h3 {
-    font-size: 18px;
+    font-size: 15px;
     color: rgb(0, 0, 0);
     font-weight: 500;
     text-transform: uppercase;
@@ -53,7 +46,7 @@
   }
   
   .card .contentBox .price {
-    font-size: 24px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
     font-weight: 700;
     letter-spacing: 1px;
@@ -66,13 +59,20 @@
     opacity: 0;
     padding: 10px 30px;
     margin-top: 15px;
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     background: #FF3073;
-    border-radius: 30px;
+    border-radius: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.5s;
+  }
+
+  .card .contentBox .add-cart-icon {
+    position: absolute;
+    left: 152px;
+    bottom: 9px; 
+    color: #ffffff;
   }
   
   .card:hover .contentBox .buy {
@@ -80,7 +80,7 @@
     opacity: 1;
   }
   
-  .mouse {
-    height: 300px;
+  .product {
+    height: 200px;
     width: auto;
   }

@@ -1,19 +1,22 @@
 import '../../../../index.css';
+import { Link } from 'react-router-dom';
+import {FaCartPlus} from 'react-icons/fa';
 
 const ProductItem = ({product}) => {
     return ( 
         <div class="card">
+            <Link to={`/productInfo`}>
+                <div class="imgBox">
+                    <img src={product.images.url} alt={product.name} class="product"/>
+                </div>
 
-            <div class="imgBox">
-                <img src={product.images.url} alt="mouse corsair" class="mouse"/>
-            </div>
-
-            <div class="contentBox">
-                <h3>{product.name}</h3>
-                <small>Allergy Information</small>
-                <h2 class="price">{product.price} CAD</h2>
-                <a href="#" class="buy">Add to Cart</a>
-            </div>
+                <div class="contentBox">
+                    <h3>{product.name}</h3>
+                    <small>Allergy Information</small>
+                    <h2 class="price">$ {product.price}</h2>
+                    <a class="buy">Add to Cart &nbsp;<FaCartPlus class='add-cart-icon' size={20}/></a>
+                </div>
+            </Link>
         </div>
      );
 }
