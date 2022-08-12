@@ -14,7 +14,7 @@ const ProductItem = ({product}) => {
                     <h3>{product.name}</h3>
                     <small>Allergy Information</small>
                     <h2 class="price">$ {product.price}</h2>
-                    <a class="buy">Add to Cart &nbsp;<FaCartPlus class='add-cart-icon' size={20}/></a>
+                    <button class="buy">Add to Cart &nbsp;&nbsp;<FaCartPlus class='add-cart-icon' size={20}/></button>
                 </div>
             </Link>
         </div>

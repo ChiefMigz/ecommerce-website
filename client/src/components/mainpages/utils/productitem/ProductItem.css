@@ -63,21 +63,23 @@
     text-decoration: none;
     background: #FF3073;
     border-radius: 10px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.5s;
+    border-style: none;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .card:hover .contentBox .buy {
+    top: 0;
+    opacity: 1;
   }
 
   .card .contentBox .add-cart-icon {
     position: absolute;
-    left: 152px;
-    bottom: 9px; 
+    left: 10vw;
+    bottom: 2vh; 
     color: #ffffff;
-  }
-  
-  .card:hover .contentBox .buy {
-    top: 0;
-    opacity: 1;
   }
   
   .product {
