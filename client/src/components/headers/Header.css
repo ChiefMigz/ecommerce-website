@@ -60,7 +60,8 @@
             transition-property: transform;
             transform: scale(1.2);
             transition-duration: 0.5s;
-            transition-delay: 150ms;
+            transition-delay: 50ms;
+            animation-timing-function: linear;
         }
 
         .cart-icon {
