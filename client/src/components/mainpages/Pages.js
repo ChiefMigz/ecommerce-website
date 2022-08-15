@@ -1,6 +1,6 @@
 import Home from '../mainpages/home/Home';
 import Products from '../mainpages/products/Products';
-import ProductView from '../mainpages/products/ProductView';
+import ProductView from '../mainpages/detailproduct/DetailProduct';
 import ErrorPage from './utils/not_found/ErrorPage';
 import {Route, Routes} from 'react-router-dom';
 
