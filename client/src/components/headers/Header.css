@@ -21,6 +21,7 @@
         .navbar a {
             padding-left: 2.5ch;
             text-decoration: none;
+            color: black;
             font-size: 21pt;
             font-weight: bold;
         }
@@ -77,3 +78,5 @@
             padding: 3px 5px;
             font-size: 10px;
         }
+
+
