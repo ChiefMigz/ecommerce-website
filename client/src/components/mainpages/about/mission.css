@@ -1,0 +1,32 @@
+
+#mission-word{
+color : #E91E63;
+
+}
+
+#mission-title{
+    text-decoration: underline;
+    text-decoration-color: gray ;
+   
+}
+
+#Mission-div-title{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    margin-left: 10%;
+}
+
+#Mission-div-title div{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-around;
+    margin-top: 3%;
+}
+
+#Mission-div-title div strong{
+    width: 30vw;
+}
+

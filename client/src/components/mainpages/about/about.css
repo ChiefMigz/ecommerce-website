@@ -1,0 +1,64 @@
+
+#title-01{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+#title-01 #Title-About{
+text-decoration: underline;
+color:  #E91E63;
+text-decoration-color: gray;
+margin-bottom: 5%;
+
+}
+
+#information-about-01
+{
+    display: flex;
+
+    flex-direction: row;
+    width: 100%;
+  padding-left: 20%;
+  padding-right: 20%;
+
+  /**/
+
+ 
+  background:
+  
+    50% no-repeat,
+    linear-gradient(  pink,white) bottom/80% 50% no-repeat  ;
+  height:100%;
+
+ 
+
+ 
+
+
+}
+
+
+#information-about-01 div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    border: 2px solid black;
+
+}
+
+
+#information-about-01 h2{
+    color : palevioletred;
+    margin-bottom: 10%;
+
+}
+
+#mission-div{
+    margin-top: 8%;
+}
+
+#mission-div-2{
+    margin-top: 5%;
+}
