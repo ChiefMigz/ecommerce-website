@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+require('mongoose-double')(mongoose);
+var SchemaTypes = mongoose.Schema.Types;
 
 const productSchema = new mongoose.Schema({
     product_id: {
@@ -17,9 +19,8 @@ const productSchema = new mongoose.Schema({
         trim: true,
         required: true
     },
-    category: {
-        type: String,
-        trim: true,
+    categories: {
+        type: Array,
         required: true
     },
     checked: {
@@ -31,7 +32,7 @@ const productSchema = new mongoose.Schema({
         default: 0
     },
     price: {
-        type: Number,
+        type: SchemaTypes.Double,
         trim: true,
         required: true
     },
