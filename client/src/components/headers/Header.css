@@ -70,7 +70,7 @@
 
         .cart-icon span {
             background: crimson;
-            border-radius: 20px;
+            border-radius: 50%;
             color: white;
             position: absolute;
             top: -8px;
