@@ -5,8 +5,10 @@ const About = ({ name = "elmo" }) => {
   return (
     <>
       <div id="title-01">
-        <h1> About </h1>
-        <h1 id="Title-About"> Toronto cupcakes</h1>
+        <span className="about">
+          <h2>About</h2>
+        </span>
+        <h1 id="Title-About">Toronto cupcakes</h1>
       </div>
       <div id="information-about-01">
         <img
@@ -15,7 +17,6 @@ const About = ({ name = "elmo" }) => {
         />
         <div>
           <h2> About {name}</h2>
-
           <p>
             lorem ipsum text copy, lorem ipsum generator, lorem ipsum paragraph,
             dummy text generator, lorem ipsum sample text, lorem ipsum dolor sit
@@ -28,7 +29,7 @@ const About = ({ name = "elmo" }) => {
         <Mission purpose="Mission" />
       </div>
       <div id="mission-div-2">
-        <Mission purpose="Vission" />
+        <Mission purpose="Vision" />
       </div>
     </>
   );

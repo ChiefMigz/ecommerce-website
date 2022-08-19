@@ -1,42 +1,18 @@
-
-#title-01{
-    display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
+.about h2 {
+    font-size: 35pt;
 }
 
-#title-01 #Title-About{
-text-decoration: underline;
-color:  #E91E63;
-text-decoration-color: gray;
-margin-bottom: 5%;
-
-}
-
-#information-about-01
-{
+#information-about-01 {
     display: flex;
-
     flex-direction: row;
     width: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
 
-  /**/
-
- 
-  background:
-  
-    50% no-repeat,
-    linear-gradient(  pink,white) bottom/80% 50% no-repeat  ;
-  height:100%;
-
- 
-
- 
-
-
+    /**/
+    background: 50% no-repeat,
+    linear-gradient(pink,white) bottom/80% 50% no-repeat;
+    height:100%;
 }
 
 
@@ -62,3 +38,5 @@ margin-bottom: 5%;
 #mission-div-2{
     margin-top: 5%;
 }
+
+@import url(mission.css);
