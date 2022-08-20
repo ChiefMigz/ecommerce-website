@@ -19,7 +19,7 @@ const Products = () => {
 
     return (
         <div>
-            <span id='title-01'>
+            <span id='title'>
                 <h1>Always Available</h1>
             </span>
             
@@ -32,10 +32,11 @@ const Products = () => {
                         return <ProductItem key={product._id} product={product} handleCheck={handleCheck}/>
                     })
                 }
+                <LoadMore/>
                 </div>
                 
             </div>
-            <LoadMore/> 
+            
             
         </div>
      );

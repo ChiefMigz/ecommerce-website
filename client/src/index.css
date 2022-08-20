@@ -16,22 +16,24 @@ code {
     monospace;
 }
 
-#title-01 {
+#title {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   flex-direction: column;
   border-bottom: 5px solid #D0D5DD;
-  width: 50%;
-  margin-left: 25%;
+  width: 80%;
+  margin-left: 10%;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
-#title-01 h1 {
-color:  #E91E63;
-font-size: 35pt;
-margin-bottom: 10px;
+#title h1 {
+  color:  #E91E63;
+  font-size: 60pt;
+  margin-bottom: 10px;
+  letter-spacing: 1pt;
 }
 
 .App {

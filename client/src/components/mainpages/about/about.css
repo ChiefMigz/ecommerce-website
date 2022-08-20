@@ -1,17 +1,5 @@
-
-#title-01{
-    display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: column;
-}
-
-#title-01 #Title-About{
-text-decoration: underline;
-color:  #E91E63;
-text-decoration-color: gray;
-margin-bottom: 5%;
-
+.about h2 {
+    font-size: 60pt;
 }
 
 #information-about-01
