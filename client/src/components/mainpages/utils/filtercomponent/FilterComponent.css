@@ -41,13 +41,12 @@
         #filter-dropdown-hide {
             display: none;
         }
+
 .filter-title {
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-bottom: 3px solid #DFDFDF;
-    width: 100%;
-   
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     }
