@@ -5,10 +5,8 @@ const About = ({ name = "elmo" }) => {
   return (
     <>
       <div id="title-01">
-        <span className="about">
-          <h2>About</h2>
-        </span>
-        <h1 id="Title-About">Toronto cupcakes</h1>
+        <h1> About </h1>
+        <h1 id="Title-About"> Toronto cupcakes</h1>
       </div>
       <div id="information-about-01">
         <img
