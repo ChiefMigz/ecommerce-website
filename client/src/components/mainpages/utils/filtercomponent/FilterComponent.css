@@ -27,7 +27,7 @@
         padding-bottom: 10px;
         padding: 10px 10px 10px 20px;
         margin-bottom: 5px;
-        
+        border-top: 3px solid #DFDFDF;
     }
         #filter-item h6 {
             font-size: 20px;
@@ -36,7 +36,7 @@
         }
         
         #filter-dropdown-show {
-            display: initial;
+            display: block;
         }
         #filter-dropdown-hide {
             display: none;
@@ -46,7 +46,60 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-bottom: 3px solid #DFDFDF;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.checkbox {
+    display: flex;
+    flex-flow: row wrapped;
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+    border-top: 3px solid #DFDFDF;
+  }
+  
+  .checkbox > span {
+    color: #34495E;
+    margin-left: 5%;
+    padding-top: calc(50% - 115px);
+    font-size: 15px;
+  }
+  
+  .checkbox > input {
+    height: 10px;
+    width: 10px;
+    transform: scale(0.8);
+    margin-left: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid #34495E;
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    }
+  
+    .checkbox > input:checked {
+    background-color: #FF3073;
+    }
+
+    .checkbox > input:checked + span::before {
+    content: '\2713';
+    display: block;
+    color: white;
+    position: absolute;
+    left: 1.8rem;
+    bottom: 0.9rem;
+    font-size: 1.2rem;
+    }
+
+    .checkbox > input:active {
+    border: 2px solid #34495E;
+    }
+
+    .checkbox label {
+    font-size: 15px;
     }
