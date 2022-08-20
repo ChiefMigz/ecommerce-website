@@ -4,7 +4,7 @@
     height: 340px;
     background: #ffffff;
     border-radius: 8px;
-    overflow: show;
+    overflow: visible;
   }
     
   .card:hover {
@@ -38,6 +38,7 @@
     justify-content: center;
     flex-direction: column;
     z-index: 2;
+    overflow: clip;
   }
   
   .card .contentBox h3 {
