@@ -15,7 +15,6 @@ const About = ({ name = "elmo" }) => {
         />
         <div>
           <h2> About {name}</h2>
-
           <p>
             lorem ipsum text copy, lorem ipsum generator, lorem ipsum paragraph,
             dummy text generator, lorem ipsum sample text, lorem ipsum dolor sit
@@ -28,7 +27,7 @@ const About = ({ name = "elmo" }) => {
         <Mission purpose="Mission" />
       </div>
       <div id="mission-div-2">
-        <Mission purpose="Vission" />
+        <Mission purpose="Vision" />
       </div>
     </>
   );

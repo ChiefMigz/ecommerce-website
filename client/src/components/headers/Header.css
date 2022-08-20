@@ -6,44 +6,35 @@
     align-items: center;
     margin: 0 auto;
     border-bottom: 1px solid #f2f2f2;
-    max-height: 90px;
+    height: 90px;
 }
 
     .navbar {
         margin-left: auto;
-        margin-bottom: 15px;
+        text-align: center;
     }
-
-        .navbar .links {
-            margin-left: auto;
-        }
-
         .navbar a {
-            padding-left: 2.5ch;
             text-decoration: none;
-            color: black;
+            color: #333333;
             font-size: 21pt;
             font-weight: bold;
+            padding: 26px 20px 26px 20px;
         }
 
         .navbar a:hover {
-            color: #E91E63;
+            background-color: #E91E63;
         }
 
         .navbar ul {
-            margin-top: 10px;
             display: flex;
-            flex-direction: row;
-            flex-direction: wrap;
+            flex-flow: row wrapped;
             flex-wrap: wrap;
             list-style: none;
         }
 
     .menu {
         display: flex;
-        flex-direction: row;
-        flex-direction: wrap;
-        flex-wrap: wrap;
+        flex-flow: row wrap;
         margin-left: auto;
     }
 

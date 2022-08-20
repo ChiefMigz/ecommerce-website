@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import '../../../index.css';
 
 const ProfileOverlay = () => {
     return ( 
         <div className='overlay'>
-            test
+            <Link to='/login'>Sign In</Link>
         </div>
      );
 }
