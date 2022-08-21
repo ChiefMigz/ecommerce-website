@@ -16,6 +16,11 @@ code {
     monospace;
 }
 
+.pages {
+  padding-left: 20px;
+  padding-top: 15vh;
+}
+
 #title {
   display: flex;
   align-items: center;
@@ -23,15 +28,14 @@ code {
   text-align: center;
   flex-direction: column;
   border-bottom: 5px solid #D0D5DD;
-  width: 80%;
-  margin-left: 10%;
-  margin-top: 15vh;
-  margin-bottom: 50px;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 30px;
 }
 
 #title h1 {
   color:  #E91E63;
-  font-size: 60pt;
+  font-size: 40pt;
   margin-bottom: 10px;
   letter-spacing: 1pt;
 }
