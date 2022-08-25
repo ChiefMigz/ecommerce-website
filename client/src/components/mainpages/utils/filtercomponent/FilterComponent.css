@@ -1,4 +1,4 @@
-.filter-container {
+#filter-container {
     display: flex;
     border-radius: 8px;
     flex-flow: column wrap;
@@ -14,12 +14,12 @@
     margin-top: 100px;
     margin-right: 50px;
 }
-    .filter-container h7 {
+    #filter-container h7 {
         font-size: 28pt;
         text-align: left;
         padding-left: 20px;
         font-weight: 500;
-        padding-top: 10px;
+        padding-top: 15px;
     }
     #filter-item {
         display: flex;
@@ -27,26 +27,93 @@
         padding-bottom: 10px;
         padding: 10px 10px 10px 20px;
         margin-bottom: 5px;
-        
+        border-top: 3px solid #DFDFDF;
     }
-        #filter-item h6 {
+        #filter-item h5 {
             font-size: 20px;
             flex-grow: 3;
             text-align: left;
         }
         
         #filter-dropdown-show {
-            display: initial;
+            display: block;
         }
         #filter-dropdown-hide {
             display: none;
         }
 
-.filter-title {
+#filter-title {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-bottom: 3px solid #DFDFDF;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+
+.filter-checkbox {
+    display: flex;
+    flex-flow: row wrapped;
+    cursor: pointer;
+    position: relative;
+    height: 50px;
+    border-top: 3px solid #DFDFDF;
+  }
+  
+  .filter-checkbox > span {
+    display: block;
+    color: #34495E;
+    text-align: center;
+    font-size: 13pt;
+    padding-top: 11px;
+    padding-left: 10px;
+  }
+  
+  .filter-checkbox > input {
+    height: 30px;
+    width: 10px;
+    transform: scale(0.8);
+    margin-left: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    border: 1px solid #34495E;
+    border-radius: 4px;
+    outline: none;
+    transition-duration: 0.3s;
+    cursor: pointer;
     }
+  
+    .filter-checkbox > input:checked {
+    background-color: #FF3073;
+    }
+
+    .filter-checkbox > input:checked + span::before {
+    content: '\2713';
+    display: block;
+    color: white;
+    position: absolute;
+    left: 1.8rem;
+    bottom: 0.7rem;
+    font-size: 1.4rem;
+    }
+
+    .filter-checkbox > input:active {
+    border: 2px solid #34495E;
+    }
+
+    .filter-checkbox label {
+    font-size: 15px;
+    }
+
+@media only screen and (max-width: 600px) {
+    .filter-container {
+        position: absolute;
+        display: block;
+        width: 100%;
+        z-index: 1000;
+        border-radius: 0;
+        top: 0;
+        bottom: 100%;
+    }
+}

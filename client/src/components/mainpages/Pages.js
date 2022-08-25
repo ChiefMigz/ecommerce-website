@@ -3,12 +3,12 @@ import Products from '../mainpages/products/Products';
 import ProductView from '../mainpages/detailproduct/DetailProduct';
 import ErrorPage from './utils/not_found/ErrorPage';
 import AboutPage from './about/about';
-import LoginPage from './login/login'
+import LoginPage from './auth/login'
 import {Route, Routes} from 'react-router-dom';
 
 const Pages = () => {
     return ( 
-        <div style={{padding: '20px'}}>
+        <div className='pages'>
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/products' element={<Products/>}/>
@@ -16,7 +16,6 @@ const Pages = () => {
                 <Route path='/about' element={<AboutPage/>}/>
                 <Route path='/login' element={<LoginPage/>}/>
                 <Route path='*' element={<ErrorPage/>}/>
-
             </Routes>
         </div>
      );

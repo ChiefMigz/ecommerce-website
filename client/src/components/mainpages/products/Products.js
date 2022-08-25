@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { GlobalState }  from '../../../GlobalState';
 import ProductItem from '../utils/productitem/ProductItem';
-import FilterComponent from './FilterComponent';
+import FilterComponent from '../utils/filtercomponent/FilterComponent';
 import Loading from '../utils/loading/Loading';
 import LoadMore from './LoadMore';
 import './../../../index.css';

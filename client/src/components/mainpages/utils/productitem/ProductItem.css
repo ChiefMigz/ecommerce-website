@@ -1,15 +1,15 @@
 .card {
     position: relative;
     width: 230px;
-    height: 340px;
-    background: #ffffff;
+    max-height: 340px;
+    background-color: #ffffff;
     border-radius: 8px;
-    overflow: show;
+    overflow: visible;
   }
     
   .card:hover {
     background-color: #FFE4E4;
-    transform:translateY(20);
+    transform: translateY(20);
     transition: 1s;
   }
 
@@ -31,6 +31,7 @@
 
   .card .contentBox {
     position: relative;
+    max-height: 60%;
     padding: 20px;
     bottom: 25%;
     display: flex;
@@ -38,6 +39,7 @@
     justify-content: center;
     flex-direction: column;
     z-index: 2;
+    overflow: clip;
   }
   
   .card .contentBox h3 {
@@ -67,7 +69,7 @@
     .card .contentBox #category-item {
       background-color: #F6A6C0;
       border-radius: 6px;
-      padding: 5px 17px 5px 17px;
+      padding: 5px 10px 5px 10px;
       text-align: center;
       font-size: 10px;
       
@@ -107,3 +109,13 @@
     height: 200px;
     width: auto;
   }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    background-color: #FFE4E4;
+  }
+  .card .contentBox .buy {
+    top: 0;
+    opacity: 1;
+  }
+}
