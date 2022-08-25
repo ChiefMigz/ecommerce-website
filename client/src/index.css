@@ -1,5 +1,10 @@
 * {
 	box-sizing: border-box;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: -moz-none;
+  -o-user-select: none;
+  user-select: none;
 }
 
 body {
@@ -51,6 +56,32 @@ code {
   display: flex;
   flex-flow: row wrapped;
   width: 100%;
+}
+
+#hidden {
+  display: none !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .pages {
+    padding-left: 0;
+    padding-top: 15vh;
+  }
+  #title {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1vh;
+  }
+  #title h1 {
+    color:  #E91E63;
+    font-size: 25pt;
+    margin-bottom: 10px;
+    letter-spacing: 0.5pt;
+
+  }
+  #container-row {
+    width: 100vw;
+  }
 }
 
 @import url(./components/headers/Header.css);

@@ -29,7 +29,7 @@ const Login = () => {
 
     return ( 
         <div>
-            <div class="login-container" id="login-container">
+            <div className="login-container" id="login-container">
                 
                 <div className="form-container sign-in-container">
                     <form onSubmit={loginSubmit}>

@@ -1,4 +1,4 @@
-.filter-container {
+#filter-container {
     display: flex;
     border-radius: 8px;
     flex-flow: column wrap;
@@ -14,12 +14,12 @@
     margin-top: 100px;
     margin-right: 50px;
 }
-    .filter-container h7 {
+    #filter-container h7 {
         font-size: 28pt;
         text-align: left;
         padding-left: 20px;
         font-weight: 500;
-        padding-top: 10px;
+        padding-top: 15px;
     }
     #filter-item {
         display: flex;
@@ -29,7 +29,7 @@
         margin-bottom: 5px;
         border-top: 3px solid #DFDFDF;
     }
-        #filter-item h6 {
+        #filter-item h5 {
             font-size: 20px;
             flex-grow: 3;
             text-align: left;
@@ -42,7 +42,7 @@
             display: none;
         }
 
-.filter-title {
+#filter-title {
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -60,14 +60,16 @@
   }
   
   .filter-checkbox > span {
+    display: block;
     color: #34495E;
-    margin-left: 5%;
-    padding-top: calc(50% - 115px);
-    font-size: 15px;
+    text-align: center;
+    font-size: 13pt;
+    padding-top: 11px;
+    padding-left: 10px;
   }
   
   .filter-checkbox > input {
-    height: 10px;
+    height: 30px;
     width: 10px;
     transform: scale(0.8);
     margin-left: 20px;
@@ -92,8 +94,8 @@
     color: white;
     position: absolute;
     left: 1.8rem;
-    bottom: 0.9rem;
-    font-size: 1.2rem;
+    bottom: 0.7rem;
+    font-size: 1.4rem;
     }
 
     .filter-checkbox > input:active {
@@ -103,3 +105,15 @@
     .filter-checkbox label {
     font-size: 15px;
     }
+
+@media only screen and (max-width: 600px) {
+    .filter-container {
+        position: absolute;
+        display: block;
+        width: 100%;
+        z-index: 1000;
+        border-radius: 0;
+        top: 0;
+        bottom: 100%;
+    }
+}

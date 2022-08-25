@@ -4,9 +4,9 @@ import FilterItem from './FilterItem';
 const FilterComponent = () => {
 
     return ( 
-        <div className='filter-container'>
-            <span className='filter-title'>
-                <h7>Filter</h7>
+        <div id='filter-container'>
+            <span id='filter-title'>
+                <h6>Filter</h6>
             </span>
             <FilterItem filterName={'Size'} items={['Small (5 cm radius)', 'Medium (7 cm radius)', 'Big (10 cm radius)']}/>
             <FilterItem filterName={'Flavor'} items={['Chocolate', 'Mocha', 'Fruit']}/>

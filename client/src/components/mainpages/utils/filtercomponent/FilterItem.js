@@ -9,17 +9,16 @@ const FilterItem = ({filterName, items}) => {
     return ( 
         <div>
             <div id='filter-item' onClick={() => toggleDropdown()}>
-                <h6>{filterName}</h6>
-                <FaAngleRight size={30} style={{transform: toggled ? 'rotate(90deg)': 'none', transition: '0.3s'}}/>
+                <h5>{filterName}</h5>
+                <FaAngleRight size={30} style={{transform: toggled ? 'rotate(90deg)': 'none', transition: '0.3s', cursor: 'pointer'}}/>
             </div>
             <div id={toggled ? 'filter-dropdown-show' : 'filter-dropdown-hide'}>
                 {
                     items.map(item => {
                         return (
-                            <label class="filter-checkbox" id={item}>
-                                <input type="checkbox" id={item}/>
+                            <label class="filter-checkbox" id={`${item}-label`}>
+                                <input type="checkbox" for={`${item}-input`}/>
                                 <span>{item}</span>
-
                             </label>
                         )
                     }) 
