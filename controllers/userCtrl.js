@@ -49,6 +49,7 @@ const userCtrl = {
             if (!user) return res.status(400).json({msg: 'User does not exist.'})
 
             const isMatch = await bcrypt.compare(password, user.password);
+           
             if (!isMatch) return res.status(400).json({msg: 'Incorrect password.'})
 
             // If login is successful, create access token and refresh token
@@ -63,9 +64,9 @@ const userCtrl = {
 
             res.json({
                 status: 'Success',
-                accessToken: accessToken
+                accessToken: accessToken,
+                maxAge: 7*24*60*60*1000 // 7d
             })
-            
         } catch (err) {
             return res.status(500).json({msg: err.message})
         }
@@ -112,7 +113,7 @@ const userCtrl = {
 // Validity of user access tokens
 
 const createAccessToken = (user) => {
-    return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {expiresIn: '1d'})
+    return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, {expiresIn: '11m'})
 }
 
 const createRefreshToken = (user) => {
