@@ -1,8 +1,8 @@
-#filter-container {
+.filterContainer {
     display: flex;
     border-radius: 8px;
     flex-flow: column wrap;
-    width: 24%;
+    width: 20%;
     height: 50%;
     column-gap: 20px;
     background-color: #EFEFEF;
@@ -14,14 +14,14 @@
     margin-top: 100px;
     margin-right: 50px;
 }
-    #filter-container h7 {
+    .filterContainer h7 {
         font-size: 28pt;
         text-align: left;
         padding-left: 20px;
         font-weight: 500;
         padding-top: 15px;
     }
-    #filter-item {
+    .filterItem {
         display: flex;
         flex-flow: row wrap;
         padding-bottom: 10px;
@@ -29,28 +29,31 @@
         margin-bottom: 5px;
         border-top: 3px solid #DFDFDF;
     }
-        #filter-item h5 {
-            font-size: 20px;
+        .filterItem h5 {
+            font-size: 1.2rem;
+            font-weight: 500;
             flex-grow: 3;
             text-align: left;
         }
         
-        #filter-dropdown-show {
-            display: block;
+        .filterDropdownShow {
+            display: inline;
         }
-        #filter-dropdown-hide {
+        
+        .filterDropdownHide {
             display: none;
         }
 
-#filter-title {
+.filterTitle {
     align-items: center;
     justify-content: center;
     flex-direction: column;
     padding-top: 5px;
     padding-bottom: 5px;
 }
+    
 
-.filter-checkbox {
+.filterCheckbox {
     display: flex;
     flex-flow: row wrapped;
     cursor: pointer;
@@ -59,16 +62,16 @@
     border-top: 3px solid #DFDFDF;
   }
   
-  .filter-checkbox > span {
+  .filterCheckbox > span {
     display: block;
+    margin: auto 0 auto 10px;
     color: #34495E;
     text-align: center;
-    font-size: 13pt;
-    padding-top: 11px;
-    padding-left: 10px;
+    font-size: 1rem;
+    block-size: fit-content;
   }
   
-  .filter-checkbox > input {
+  .filterCheckbox > input {
     height: 30px;
     width: 10px;
     transform: scale(0.8);
@@ -84,11 +87,11 @@
     cursor: pointer;
     }
   
-    .filter-checkbox > input:checked {
+    .filterCheckbox > input:checked {
     background-color: #FF3073;
     }
 
-    .filter-checkbox > input:checked + span::before {
+    .filterCheckbox > input:checked + span::before {
     content: '\2713';
     display: block;
     color: white;
@@ -98,16 +101,16 @@
     font-size: 1.4rem;
     }
 
-    .filter-checkbox > input:active {
+    .filterCheckbox > input:active {
     border: 2px solid #34495E;
     }
 
-    .filter-checkbox label {
+    .filterCheckbox label {
     font-size: 15px;
     }
 
 @media only screen and (max-width: 600px) {
-    .filter-container {
+    .filterContainer {
         position: absolute;
         display: block;
         width: 100%;

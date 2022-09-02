@@ -6,6 +6,7 @@ import MainPages from './components/mainpages/Pages';
 
 
 function App() {
+
   return (
     <DataProvider>
     <Router>
