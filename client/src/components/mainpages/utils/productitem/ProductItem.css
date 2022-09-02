@@ -13,9 +13,14 @@
     transition: 1s;
   }
 
-  .card small {
+  .card .allergyInfo {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     text-decoration: underline;
     text-align: center;
+    color: #2089C3;
+    font-size: 0.8rem;
   }
     
   .card .imgBox {
@@ -26,44 +31,57 @@
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    z-index: 1;
+    z-index: 0;
   }
 
   .card .contentBox {
     position: relative;
-    max-height: 60%;
-    padding: 20px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2rem;
     bottom: 25%;
     display: flex;
     gap: 5px;
     justify-content: center;
     flex-direction: column;
-    z-index: 2;
+    z-index: 1;
     overflow: clip;
   }
   
   .card .contentBox h3 {
-    margin: 0 -20px;
-    font-size: 15px;
+    width: fit-content;
+    font-size: 1.5rem;
     color: rgb(0, 0, 0);
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-align: center
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+
+  .card .detailLink {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    bottom: 20%;
+    right: 0;
+    z-index: 0;
   }
   
   .card .contentBox .price {
-    font-size: 17px;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 500;
     color: rgb(0, 0, 0);
-    letter-spacing: 1px;
     padding-top: 5px;
   }
 
   .card .contentBox .categories {
     display: flex;
+    inline-size: 200px;
     flex-flow: row wrap;
     gap: 10px;
     color: white;
+    width: fit-content;
   }
   
     .card .contentBox #category-item {
@@ -72,10 +90,15 @@
       padding: 5px 10px 5px 10px;
       text-align: center;
       font-size: 10px;
-      
+      text-decoration: none;
+    }
+    .card .contentBox #category-item:hover {
+      background-color: #FF3073;
     }
   
   .card .contentBox .buy {
+    width: fit-content;
+    height: fit-content;
     position: relative;
     display: flex;
     flex-flow: row wrap;
@@ -91,7 +114,6 @@
     letter-spacing: 1px;
     transition: 0.5s;
     border-style: none;
-    width: 100%;
     font-size: 14px;
     text-align: center;
   }
@@ -99,6 +121,9 @@
   .card:hover .contentBox .buy {
     top: 0;
     opacity: 1;
+  }
+  .card:hover .contentBox .buy:hover {
+    background-color: #C8235B;
   }
 
   .card .contentBox .add-cart-icon {
