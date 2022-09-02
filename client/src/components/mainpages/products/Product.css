@@ -1,6 +1,6 @@
-.cupcake-container {
+.cupcakeContainer {
     padding-top: 100px;
-    gap: 9vh 2vw;
+    gap: 12vh 2vw;
     display: flex;
     flex-flow: row wrap;
     margin: 0 auto;
@@ -10,15 +10,15 @@
     text-decoration: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     .products {
         width: 100vw;
         padding-left: 10%;
     }
-    .cupcake-container {
+    .cupcakeContainer {
         width: 100vw;
         height: auto;
-        row-gap: 200px;
+        row-gap: 100px;
         flex-flow: column wrap;
         align-items: center;
     }

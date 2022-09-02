@@ -2,6 +2,7 @@ import { useContext, useState, useEffect } from "react";
 import { useParams, useNavigate } from 'react-router-dom';
 import { GlobalState } from '../../../GlobalState';
 import {FaArrowAltCircleLeft} from 'react-icons/fa';
+import './DetailProduct.css';
 //import ProductItem from "../utils/productitem/ProductItem";
 
 const DetailProduct = () => {
@@ -22,22 +23,25 @@ const DetailProduct = () => {
     
     if(detailProduct.length === 0) return null;
 
-    console.log(detailProduct)
     return ( 
         <div style={{display: 'flex', flexDirection: 'column'}}>
-            <FaArrowAltCircleLeft size={30} onClick={() => GoBack()}/>
-            <div className="detail">
-                    <img src={detailProduct.images.url} alt={`${detailProduct.title} product`}/>
-                    <div className="box-detail">
-                        <div className="row">
-                            <h2>{detailProduct.name}</h2>
-                        </div>
-                        <span>$ {detailProduct.price}</span>
-                        <p>{detailProduct.description}</p>
-                        <p>{detailProduct.content}</p>
-                        <p>Sold: {detailProduct.sold}</p>
-                        
+            <FaArrowAltCircleLeft size={60} onClick={() => GoBack()}/>
+            <div class="general">
+                <div class="sag">
+                    <img src={detailProduct.images.url} alt=""/>
                     </div>
+                <div class="detailContent">
+                    <div class="left">
+                    <h1>{detailProduct.name}</h1>
+                    <h3>Label</h3>
+                    <h5>{detailProduct.description}</h5>
+                    <div class="para">$ {detailProduct.price}</div>
+                    <div class="alacaklı">
+                        <button><i class="fas fa-shopping-bag"></i> Add To Bag</button>
+                    </div>
+                    </div>
+                    
+                </div>
                 </div>
         </div>
      );

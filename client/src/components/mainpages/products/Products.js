@@ -23,9 +23,9 @@ const Products = () => {
                 <h1>Always Available</h1>
             </span>
             
-            <div id='container-row'>
+            <div id='containerRow'>
                 <FilterComponent/>
-                <div className='cupcake-container'>
+                <div className='cupcakeContainer'>
                 {products.length === 0 && <Loading />}
                 {     
                     products.map(product => {

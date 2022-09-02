@@ -1,5 +1,3 @@
-import DeliveryModal from '../utils/deliverymodal/DeliveryModal';
-
 const Home = () => {
     return ( 
         <div>

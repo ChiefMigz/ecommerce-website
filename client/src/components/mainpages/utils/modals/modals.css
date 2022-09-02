@@ -1,10 +1,10 @@
 .modalDialog {
+    display: block;
     position: fixed;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    opacity: ;
     -webkit-transition: opacity 100ms ease-in;
     -moz-transition: opacity 100ms ease-in;
     transition: opacity 100ms ease-in;
@@ -12,8 +12,8 @@
     border: none;
 }
 
-.modalDialog-hidden {
-    opacity: 0;
+.modalDialogHidden {
+    display: none;
 }
 
 .modalDialog > div {
@@ -25,6 +25,7 @@
     border-radius: 3px;
     background: pink;
 }
+
 .close {
     font-family: Arial, Helvetica, sans-serif;
     background: #f26d7d;
@@ -47,6 +48,7 @@
     
     border: none;
 }
+
 .close:hover {
     background: #fa3f6f;
 }
