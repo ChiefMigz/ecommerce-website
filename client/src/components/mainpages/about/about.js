@@ -1,7 +1,7 @@
 import Mission from "./mission";
 import "./about.css";
 
-const About = ({ name = "elmo" }) => {
+const About = ({ name = "Michelle" }) => {
   return (
     <>
       <div id="title-01">

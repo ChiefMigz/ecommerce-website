@@ -3,6 +3,7 @@ import Products from '../mainpages/products/Products';
 import ProductView from '../mainpages/products/ProductView';
 import ErrorPage from './utils/not_found/ErrorPage';
 import {Route, Routes} from 'react-router-dom';
+import About from './about/about';
 
 const Pages = () => {
     return ( 
@@ -10,6 +11,7 @@ const Pages = () => {
             <Routes>
                 <Route path='/' element={<Home/>}/>
                 <Route path='/products' element={<Products/>}/>
+                <Route path='/about' element={<About/>}/>
                 <Route path='/productInfo' element={<ProductView/>}/>
                 <Route path='*' element={<ErrorPage/>}/>
 

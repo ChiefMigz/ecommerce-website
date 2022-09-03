@@ -6,11 +6,11 @@ import './../../../index.css';
 const Products = () => {
     const state = useContext(GlobalState)
     
-    const [products, setProducts] = state.productsAPI.products
+    const [products, ] = state.productsAPI.products
 
     return (
         <div>
-            <h1>Always Available</h1>
+            <h1> Our best selling cupcakes </h1>
             <div className='cupcake-container'>
             {
                 products.map(product => {

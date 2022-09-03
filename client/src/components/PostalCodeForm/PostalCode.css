@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.form-inp-modal{
+background-color: #98B4D4;
+border-radius: 0px;
+
+width: 10vw;
+height: 30px;
+margin-right: 30px;
+
+
+
+}
+.modal-h3-div{
+    margin-left: 30px;
+
+}
+
+.inp-modal{
+    color:black;
+    margin-top: 5%;
+    margin-left: 05vw;
+    width: 14vw;
+    display: inline-block;
+    font-size: large;
+}
+
+.postalcode-maindiv{
+    font-family: 'Raleway', serif;
+}
+
+.div-form-modal{
+    background-color: #FC00FF;
+   
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+}
+         
+
+ 
+
+
+.modal-h3-div{
+
+    width: 560px;
+
+
+}
+
+.sub-btn-modal{
+ 
+   width: 7vw;
+   height: 5vh;
+   border-radius: 40px;
+   background-color: palevioletred;
+   font-size: medium;
+   color: white;;
+
+}
+
+     
+
+
+

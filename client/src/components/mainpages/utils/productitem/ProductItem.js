@@ -6,7 +6,7 @@ const ProductItem = ({product}) => {
     return ( 
         <div class="card">
             <Link to={`/productInfo`}>
-                <div class="imgBox">
+                <div className="imgBox">
                     <img src={product.images.url} alt={product.name} class="product"/>
                 </div>
 
@@ -14,7 +14,7 @@ const ProductItem = ({product}) => {
                     <h3>{product.name}</h3>
                     <small>Allergy Information</small>
                     <h2 class="price">$ {product.price}</h2>
-                    <a class="buy">Add to Cart &nbsp;<FaCartPlus class='add-cart-icon' size={20}/></a>
+                    <a  class ="buy" >Add to Cart &nbsp;<FaCartPlus className='add-cart-icon' size={20}/></a>
                 </div>
             </Link>
         </div>

@@ -1,5 +1,5 @@
 .card {
-    position: relative;
+  position: relative;
     width: 250px;
     height: 380px;
     background: #ffffff;
@@ -18,7 +18,7 @@
   }
     
   .card .imgBox {
-    position: relative;
+    /*position: relative;*/
     width: 100%;
     display: flex;
     justify-content: center;
@@ -28,7 +28,7 @@
   }
 
   .card .contentBox {
-    position: relative;
+    /*position: relative;*/
     padding: 20px;
     display: flex;
     justify-content: center;
