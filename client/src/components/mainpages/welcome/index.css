@@ -1,0 +1,130 @@
+
+
+
+.FS-container {
+    
+    display: flex;
+    background-image: url('../../../../public/CupcakeWelcomeImage.png');
+    background-repeat: no-repeat;
+    background-size:100vw 75vh;
+    color: white;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .SS-container {
+    background: linear-gradient(106.13deg, #F0E4D7 0.65%, #FDDAB5 69.47%, #F6A6C0 100%);
+    display: flex;
+    font-size: large;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+
+  
+  .FS-item {
+    
+    height: 500px;
+  
+    width: 32px; /* A fixed width as the default */
+  
+    display: flex;
+  
+    align-items: center;
+    justify-content: center;
+   
+  }
+  
+  .FS-item-center { 
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    
+  
+  }
+  
+  .FS-item-center > div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    
+  }
+  
+  .FS-item-center > div > div{
+    margin-left: 5%;
+  }
+  
+  .FS-row-3 button{
+    background-color: #FF3073;
+    color: white;
+    font-size: large;
+    font-style: italic;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+
+
+.SS-item-center { 
+    flex-grow: 1;
+  
+  display: grid;
+  height: 500px;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 380px 120px;
+   
+  
+  
+  
+  }
+  
+  .SS-img{
+  width: 100%;
+  height: 100%;
+  }
+  
+  .SS-button{
+    width: 20vw;
+    height: 10vh;
+    border-radius: 5px;
+    color: white;
+    font-size: large;
+    background-color: #FF3073;
+  }
+  /*column1 y column 2 */
+  
+  .SS-item-center > div {
+    display: grid;
+  }
+  
+  .SS-column-1{
+    grid-template-rows: 30% 15% 55%;
+    
+  }
+  
+  /*Font and family for screen 2 */
+  .SS-box1{
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .SS-box2{
+   font-size: small;
+  }
+
+  .SS-box3{
+    font-style: italic;
+  }
+  
+  .SS-box4{
+    grid-column: span 2;
+   justify-items: center;
+   
+   margin: 10px;
+  
+    
+  }
+  
+  
+  
+      
