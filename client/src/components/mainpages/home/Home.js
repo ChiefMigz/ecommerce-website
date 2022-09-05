@@ -15,14 +15,14 @@ const Home = () => {
     }
 
     return ( 
+
        <div>
         <Welcome/>
         <Products/>
 
-     {showModal&&   <ModalPortal onClose={handleClose}> <PostalCodeForm showmodal={setShowModal}/></ModalPortal>}
+        {showModal &&  <ModalPortal onClose={handleClose}> <PostalCodeForm showmodal={setShowModal}/></ModalPortal>}
     
        </div>
-
      );
 }
  

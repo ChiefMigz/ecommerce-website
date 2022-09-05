@@ -1,0 +1,379 @@
+.general
+{
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+}
+
+.general .detailContent
+{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  height: calc(100% - 15vh);
+  margin: 0 5%;
+}
+.general .detailContent .left
+{
+  width: 40%;
+ 
+  padding: 45px 35px;
+  height: 90%;
+}
+.general .detailContent .left  h3
+{
+  margin: 15px 0;
+  color:  rgb(249, 48, 66);
+}
+.general .detailContent .left  h5
+{
+  margin: 15px 0;
+  color: #565555;
+line-height: 20px;
+}
+.general .detailContent .left .para
+{
+  margin: 30px 0;
+  font-size: 30px;
+font-weight: bolder;
+}
+.general .detailContent .left .alacaklı
+{
+  position: relative;
+  position:  relative;
+    display:  flex;
+    width:  126%;
+}
+.general .detailContent .left .alacaklı input
+{
+  width: 35%;
+  border-radius: 15px;
+  height: 55px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bolder;
+  margin-right: 25px;
+  background: #eee;
+  box-shadow: 0 0 16px rgba(0,0,0, .50);
+  border: 1px solid #ddd;
+
+}
+.general .detailContent .left .alacaklı input:hover
+{
+  box-shadow: 0 0 2px #ddd;
+}
+.general .detailContent .left .alacaklı label: nth-child(1)
+{
+  
+    content:  "+";
+    width:  40px;
+    height: 43px;
+    position:  absolute;
+    background:  #ddd;
+cursor: pointer;
+  font-size: 40px;
+  
+  line-height: 36px;
+  text-align: center;
+    border-radius:  27%;
+    z-index:  1;
+    top:  5px;
+  left: 5px
+}
+.general .detailContent .left .alacaklı label
+{
+    cursor: pointer;
+    content:  "";
+    width:  40px;
+    height: 43px;
+    position:  absolute;
+    background:  #ddd;
+
+  font-size: 30px;
+  
+  line-height: 36px;
+  text-align: center;
+    border-radius:  27%;
+    z-index:  1;
+    top:  5px;
+  right: 185px;
+}
+.general .detailContent .left .alacaklı button
+{
+  padding: 20px 25px;
+  width: 40%;
+      background:  rgb(249, 48, 66);
+  color: #fff;
+  transition: .5s all;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.general .detailContent .left .alacaklı button:hover {
+  box-shadow: 0  0 16px rgb(249, 48, 66);
+transition: .5s all;}
+.general .detailContent .left .alacaklı i {
+  margin-right: 10px;
+}
+.general .detailContent .sag {
+    width: 30%;  
+    height: 30%;  padding: 45px 0;
+    position: relative;
+}
+.general .detailContent .sag img
+{
+  width: 100%;
+  border-radius: 20px;
+  height: auto;
+}
+.general .detailContent .onz
+{
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 60%;
+  left: 79%;
+  
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  cursor: pointer;
+}
+.general .detailContent .onz: before
+{
+  content: "";
+    border: 2px solid #fff;
+  width: 100%;
+top:  -2px;
+  left: -2px;
+  border-radius: 50%;
+  position: absolute;
+  height: 100%;
+  animation:  1s border infinite linear;
+}
+.sag .onz:hover .tool-tip
+{
+opacity: 1;  transition: .5s all;
+  visibility: "visible";
+  
+}
+.tool-tip { 
+    width: fit-content;
+    height: auto;
+    opacity: 0;
+    visibility: "hidden";
+    padding: 5px;
+    display: flex;
+    margin-top: -45px;
+    margin-left: -22px;
+    transition: .5s all;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background: rgba(255,255,255, .70);
+}
+
+.tool-tip: before {
+  content: "";
+  width: 0;
+  height: 0;
+  border: 8px solid transparent;
+  border-top-color: rgba(255,255,255, .70);
+  position: absolute;
+  bottom: 13px;
+}
+
+@keyframes border {
+  0%
+  {
+    opacity: .5;
+    transform: scale(1);
+  }
+  100%
+  {
+    transform: scale(3);
+    opacity: 0;
+  }
+  
+}
+
+.sepet {
+  width: 45px;
+  height: 45px;
+display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  background: #white;
+  
+}
+.sepet: before
+{
+  content: "3";
+  width: 50%;
+  height: 23px;
+  color: #fff;
+  top: -3px;
+  right: -3px;
+  text-align: center;
+  background: rgb(249, 48, 66);
+    position: absolute;
+  border-radius: 130px;
+}
+.sepet i
+{
+  
+  font-size: 25px;
+}
+#menuac
+{
+ 
+}
+#openmenu
+{
+  display: none;
+  width: 45px;
+height: 45px;
+  cursor: pointer;
+
+  align-items: center;
+font-size: 17px;
+  border: 1px solid;
+  border-radius: 10px;
+  justify-content: center;
+}
+#openmenu:hover
+{
+ box-shadow: 1px 1px 3px #000;
+  transition: .5s;
+}
+#menuac: checked + .responsive-menu
+{
+  display: block;
+}
+.responsive-menu
+{
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+  visibility: hidden;
+  bottom: 0;
+  transition: .5s all;
+  height: 100%;
+    position: fixed;
+  background: rgba(255,255,255, 230);
+  right: 2px;
+  
+}
+.responsive-menu ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 35px;
+    text-align: center;
+}
+
+.responsive-menu ul h3 {
+    padding-bottom: 25px;
+}
+
+.responsive-menu ul label {
+    position: absolute;
+    right:  38px;
+    display:  block;
+    line-height: 35px;
+    width: 45px;
+    height: 45px;
+    top:  30px;
+    font-weight: bolder;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+}
+
+.responsive-menu ul li
+{
+  cursor: pointer;
+  width: 100%;
+  font-weight: 600;
+  padding: 20px;
+}
+.rmenu-bottom
+{
+
+  width: 100%;
+  margin-top: 45px;
+  display: flex;
+}
+.rmenu-bottom li i
+{
+font-size: 30px;
+}
+.rmenu-bottom li button
+{
+  padding: 15px 25px;
+      background:  rgb(249, 48, 66);
+  color: #fff;
+  transition: .5s all;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media (max-width: 768px)
+  {
+    .general .detailContent
+    {
+      display: flex;
+      flex-direction: column-reverse;
+      height: auto;
+    }
+    .general .detailContent .left .alacaklı
+    {
+      width: 100%;
+    }
+    .general .detailContent .left ,.sag
+    {
+      width: 100% !important;
+    }
+     .general .ust .menu , .sepet
+    {
+      display: none !important;
+    }
+    #openmenu
+    {
+      display: flex;
+    }
+}
+.sepetim
+{
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+
+  background: #fff;
+   opacity: 0;
+  visibility: hidden;
+display: flex;
+  flex-direction: column;
+}
+#sepet
+{
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: 2s all;
+}
+#sepet: checked  + .sepetim {
+    visibility: visible;
+    opacity: 1; 
+    transition: 2s all;
+    right: 0px;
+
+}
+#kepe
+{
+    border-bottom: 2px solid;
+}

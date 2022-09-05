@@ -1,86 +1,146 @@
 .card {
-  position: relative;
-    width: 250px;
-    height: 380px;
-    background: #ffffff;
-    border-radius: 20px;
-    overflow: hidden;
+    position: relative;
+    width: 230px;
+    max-height: 340px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: visible;
   }
     
   .card:hover {
     background-color: #FFE4E4;
-    transform:translateY(20);
+    transform: translateY(20);
     transition: 1s;
   }
 
-  .card small {
+  .card .allergyInfo {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     text-decoration: underline;
+    text-align: center;
+    color: #2089C3;
+    font-size: 0.8rem;
   }
     
   .card .imgBox {
-    /*position: relative;*/
+    position: relative;
+    bottom: 20%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-top: 20px;
-    z-index: 1;
+    z-index: 0;
   }
 
   .card .contentBox {
-    /*position: relative;*/
-    padding: 20px;
+    position: relative;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2rem;
+    bottom: 25%;
     display: flex;
+    gap: 5px;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    z-index: 2;
+    z-index: 1;
+    overflow: clip;
   }
   
   .card .contentBox h3 {
-    font-size: 15px;
+    width: fit-content;
+    font-size: 1.5rem;
     color: rgb(0, 0, 0);
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+
+  .card .detailLink {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    bottom: 20%;
+    right: 0;
+    z-index: 0;
   }
   
   .card .contentBox .price {
-    font-size: 20px;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 500;
     color: rgb(0, 0, 0);
-    font-weight: 700;
-    letter-spacing: 1px;
-    padding-top: 10px;
+    padding-top: 5px;
+  }
+
+  .card .contentBox .categories {
+    display: flex;
+    inline-size: 200px;
+    flex-flow: row wrap;
+    gap: 10px;
+    color: white;
+    width: fit-content;
   }
   
+    .card .contentBox #category-item {
+      background-color: #F6A6C0;
+      border-radius: 6px;
+      padding: 5px 10px 5px 10px;
+      text-align: center;
+      font-size: 10px;
+      text-decoration: none;
+    }
+    .card .contentBox #category-item:hover {
+      background-color: #FF3073;
+    }
+  
   .card .contentBox .buy {
+    width: fit-content;
+    height: fit-content;
     position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
     top: 100px;
     opacity: 0;
-    padding: 10px 30px;
+    padding: 10px 35px;
     margin-top: 15px;
     color: #ffffff;
     text-decoration: none;
     background: #FF3073;
     border-radius: 10px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     transition: 0.5s;
+    border-style: none;
+    font-size: 14px;
+    text-align: center;
   }
 
-  .card .contentBox .add-cart-icon {
-    position: absolute;
-    left: 152px;
-    bottom: 9px; 
-    color: #ffffff;
-  }
-  
   .card:hover .contentBox .buy {
     top: 0;
     opacity: 1;
+  }
+  .card:hover .contentBox .buy:hover {
+    background-color: #C8235B;
+  }
+
+  .card .contentBox .add-cart-icon {
+    color: #ffffff;
   }
   
   .product {
     height: 200px;
     width: auto;
   }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    background-color: #FFE4E4;
+  }
+  .card .contentBox .buy {
+    top: 0;
+    opacity: 1;
+  }
+}

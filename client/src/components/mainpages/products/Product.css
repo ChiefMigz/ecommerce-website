@@ -1,12 +1,29 @@
-.cupcake-container {
+.cupcakeContainer {
     padding-top: 100px;
-    gap: 20px 20px;
+    gap: 12vh 2vw;
     display: flex;
-    flex-wrap:wrap;
+    flex-flow: row wrap;
     margin: 0 auto;
 
 }
 
 .card a {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 900px) {
+    .products {
+        width: 100vw;
+        padding-left: 10%;
+    }
+    .cupcakeContainer {
+        width: 100vw;
+        height: auto;
+        row-gap: 100px;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+    .hide-filter {
+        display: none;
+    }
 }
