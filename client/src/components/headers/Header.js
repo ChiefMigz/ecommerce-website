@@ -12,7 +12,7 @@ const Header = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setProfileOverlay(!profileOverlay);
     return (
-            <div className='container'>
+            <div className='navbarContainer'>
                 {/* Mobile Display Nav Button */}
                 <div className='bars' onClick={() => setNav(!nav)}>
                     <FaBars size={30}/>
@@ -29,7 +29,7 @@ const Header = () => {
                 </div>                 
                 
                 {/* Links */}
-                <div className='navbar'>
+                <div className='navbarLinks'>
                     <ul>
                         <li>
                             <Link to="/">Home</Link>
