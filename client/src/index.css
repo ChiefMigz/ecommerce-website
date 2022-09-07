@@ -21,11 +21,6 @@ code {
     monospace;
 }
 
-.pages {
-  padding-left: 20px;
-  padding-top: 15vh;
-}
-
 #title {
   display: flex;
   align-items: center;
@@ -60,6 +55,11 @@ code {
 
 #hidden {
   display: none !important;
+}
+
+.contentMargin {
+  margin-top: 15vh;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {
