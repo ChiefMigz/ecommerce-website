@@ -19,7 +19,7 @@ const Products = () => {
 
     return (
         <div>
-            <span id='title'>
+            <span className='marginContent' id='title'>
                 <h1>Always Available</h1>
             </span>
             
