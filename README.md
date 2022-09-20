@@ -150,6 +150,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Miguel Shelwyn Pe Benito - [LinkedIn Profile](https://www.linkedin.com/in/miguel-shelwyn-pe-benito/) - pebenitomiguel@gmail.com
+Sebastian Acosta - [Github Profile](https://github.com/SebastianAc02) - sacostamolin@gmail.com
 
 Project Link: [https://github.com/ChiefMigz/ecommerce-website](https://github.com/ChiefMigz/ecommerce-website)
 
