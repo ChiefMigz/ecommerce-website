@@ -64,6 +64,14 @@
 
 This is an ecommerce website made using MERN web stack. It is the redesigned website of <a href='https://www.torontocupcake.com'>Toronto Cupcakes</a> which was made on Figma.
 
+Website backend is currently using
+* **Axios** for frontend API request
+* **Bcrypt** for authentication
+* **JSON Web Token** for token based authentication
+* **Cloudinary** for storing product images
+* **Express** for API routes
+* **mongoose** for database schema
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
