@@ -6,12 +6,13 @@ function UserAPI(token) {
     const [isAdmin, setIsAdmin] = useState(false)
     const [cart, setCart] = useState([])
     const [history, setHistory] = useState([])
+    const API_HOST = 'https://cupcake-website-backend.herokuapp.com'
 
     useEffect(() => {
         if (token){
             const getUser = async () =>{
                 try {
-                    const res = await axios.get('/user/infor', {
+                    const res = await axios.get(`${API_HOST}/user/infor`, {
                         headers: {Authorization: token}
                     })
 

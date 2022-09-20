@@ -9,10 +9,11 @@ const ProductsAPI = () => {
     const [search, setSearch] = useState('')
     const [page, setPage] = useState(1)
     const [result, setResult] = useState(0)
+    const API_HOST = 'https://cupcake-website-backend.herokuapp.com'
 
     useEffect(() =>{
         const getProducts = async () => {
-            const res = await axios.get(`/api/products?limit=${page*9}&${category}&${sort}&title[regex]=${search}`)
+            const res = await axios.get(`${API_HOST}/api/products?limit=${page*9}&${category}&${sort}&title[regex]=${search}`)
             console.log(res)
             setProducts(res.data.products)
         }
