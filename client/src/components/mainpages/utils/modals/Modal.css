@@ -1,0 +1,35 @@
+.Modal {    
+  background-color: rgba(255,255,255,0.6);
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: pink;
+  margin-top: 77.5vh;
+  margin-left: 30vw;
+  margin-right: 30vw;
+
+  color:white;
+  width: 60vw;
+  height: 20vh;
+  max-width: 600px;
+}
+
+.Modal button {
+  border: none;
+  background: red;
+  border-radius: 50%;
+}
+
+.btn-modal {
+  color: white;
+  position: absolute;
+  background-color: transparent;
+  width: 1.5vw;
+  font-size: 1.2rem;
+}

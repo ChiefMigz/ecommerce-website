@@ -31,8 +31,7 @@ margin-right: 30px;
 }
 
 .div-form-modal{
-    background-color: #FC00FF;
-   
+    background-color: #FC00FF; 
     display: flex;
     flex-direction: row;
     height: 5vh;

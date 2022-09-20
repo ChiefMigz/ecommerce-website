@@ -1,11 +1,9 @@
-.container {
+.navbarContainer {
     background-color: #F5C0C0;
     padding: 20px;
     width: 100%;
     display: flex;
     align-items: center;
-    margin: 0 auto;
-    border-bottom: 1px solid #f2f2f2;
     height: 90px;
     position: fixed;
     z-index: 200;
@@ -19,24 +17,25 @@
         display: none;
     }
 
-    .navbar {
+    .navbarLinks {
         margin-left: auto;
         text-align: center;
     }
-        .navbar a {
+        .navbarLinks a {
             text-decoration: none;
             color: #333333;
             font-size: 21pt;
             font-weight: bold;
-            padding: 26px 20px 26px 20px;
+            padding: 1.8rem 1.5rem 1.8rem 1.5rem;
         }
 
-        .navbar a:hover {
+        .navbarLinks a:hover {
             background-color: #E91E63;
         }
 
-        .navbar ul {
+        .navbarLinks ul {
             display: flex;
+            height: 100%;
             flex-flow: row wrapped;
             flex-wrap: wrap;
             list-style: none;
@@ -105,7 +104,6 @@
         height: 100vh;
         background-color: white;
         text-align: center;
-        justify: center;
     }
     #menu-mobile span {
         display: block;

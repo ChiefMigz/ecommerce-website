@@ -3,7 +3,7 @@
     gap: 12vh 2vw;
     display: flex;
     flex-flow: row wrap;
-    margin: 0 auto;
+    width: 100%;
 
 }
 

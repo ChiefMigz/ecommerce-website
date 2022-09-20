@@ -26,7 +26,7 @@ const PostalCodeForm = ({ showmodal }) => {
   return (
     <div className="postalcode-maindiv">
       <div className="div-form-modal">
-        <h3 className="modal-h3-div">  {'  Verify delivery availability   🚛'}</h3>
+        <h3 className="modal-h3-div">  {'Verify delivery availability   🚛'}</h3>
       </div>
 
       {distance === "" ? (
