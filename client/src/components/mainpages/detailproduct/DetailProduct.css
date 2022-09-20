@@ -63,7 +63,7 @@ font-weight: bolder;
 {
   box-shadow: 0 0 2px #ddd;
 }
-.general .detailContent .left .alacaklı label: nth-child(1)
+.general .detailContent .left .alacaklı label:nth-child(1)
 {
   
     content:  "+";
@@ -139,12 +139,12 @@ transition: .5s all;}
   position: absolute;
   cursor: pointer;
 }
-.general .detailContent .onz: before
+.general .detailContent .onz:before
 {
   content: "";
-    border: 2px solid #fff;
+  border: 2px solid #fff;
   width: 100%;
-top:  -2px;
+  top:  -2px;
   left: -2px;
   border-radius: 50%;
   position: absolute;
@@ -173,7 +173,7 @@ opacity: 1;  transition: .5s all;
     background: rgba(255,255,255, .70);
 }
 
-.tool-tip: before {
+.tool-tip:before {
   content: "";
   width: 0;
   height: 0;
@@ -200,15 +200,15 @@ opacity: 1;  transition: .5s all;
 .sepet {
   width: 45px;
   height: 45px;
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   position: relative;
-  background: #white;
+  background: white;
   
 }
-.sepet: before
+.sepet:before
 {
   content: "3";
   width: 50%;
@@ -218,7 +218,7 @@ display: flex;
   right: -3px;
   text-align: center;
   background: rgb(249, 48, 66);
-    position: absolute;
+  position: absolute;
   border-radius: 130px;
 }
 .sepet i
@@ -226,10 +226,7 @@ display: flex;
   
   font-size: 25px;
 }
-#menuac
-{
- 
-}
+
 #openmenu
 {
   display: none;
@@ -248,7 +245,7 @@ font-size: 17px;
  box-shadow: 1px 1px 3px #000;
   transition: .5s;
 }
-#menuac: checked + .responsive-menu
+#menuac:checked + .responsive-menu
 {
   display: block;
 }
@@ -366,7 +363,7 @@ display: flex;
   visibility: hidden;
   transition: 2s all;
 }
-#sepet: checked  + .sepetim {
+#sepet:checked + .sepetim {
     visibility: visible;
     opacity: 1; 
     transition: 2s all;
@@ -375,5 +372,5 @@ display: flex;
 }
 #kepe
 {
-    border-bottom: 2px solid;
+  border-bottom: 2px solid;
 }
