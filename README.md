@@ -121,7 +121,7 @@ This is an example of how to list things you need to use the software and how to
     CLOUD_API_KEY =
     CLOUD_API_SECRET =
     ```
-5. In <b>client/package.json</b>, set up the port to link frontend to backend
+5. In `client/package.json` set up the port to link frontend to backend
    ```json
    "proxy": "http://localhost:PORT/"
    ```
