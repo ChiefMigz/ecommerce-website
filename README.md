@@ -170,7 +170,7 @@ Project Link: [https://github.com/ChiefMigz/ecommerce-website](https://github.co
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/miguel-shelwyn-pe-benito
 [product-screenshot]: images/screenshot.png
-[Express]: https://img.shields.io/badge/ExpressJS-ff0015?style=for-the-badge&logo=express&logoColor=white
+[Express]: https://img.shields.io/badge/Express-ff0015?style=for-the-badge&logo=express&logoColor=white
 [Express-url]: https://img.shields.io/badge/ExpressJS-ff0015?style=for-the-badge&logo=express&logoColor=white
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
