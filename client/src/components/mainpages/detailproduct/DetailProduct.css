@@ -1,9 +1,9 @@
 .general
 {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .general .detailContent
@@ -83,27 +83,25 @@ cursor: pointer;
 }
 .general .detailContent .left .alacaklı label
 {
-    cursor: pointer;
-    content:  "";
-    width:  40px;
-    height: 43px;
-    position:  absolute;
-    background:  #ddd;
-
+  cursor: pointer;
+  content:  "";
+  width:  40px;
+  height: 43px;
+  position:  absolute;
+  background:  #ddd;
   font-size: 30px;
-  
   line-height: 36px;
   text-align: center;
-    border-radius:  27%;
-    z-index:  1;
-    top:  5px;
+  border-radius:  27%;
+  z-index:  1;
+  top:  5px;
   right: 185px;
 }
 .general .detailContent .left .alacaklı button
 {
   padding: 20px 25px;
   width: 40%;
-      background:  rgb(249, 48, 66);
+  background:  rgb(249, 48, 66);
   color: #fff;
   transition: .5s all;
   border-radius: 10px;
@@ -111,7 +109,8 @@ cursor: pointer;
 }
 .general .detailContent .left .alacaklı button:hover {
   box-shadow: 0  0 16px rgb(249, 48, 66);
-transition: .5s all;}
+  transition: .5s all;
+}
 .general .detailContent .left .alacaklı i {
   margin-right: 10px;
 }
