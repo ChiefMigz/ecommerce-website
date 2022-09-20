@@ -16,7 +16,7 @@ const FilterItem = ({filterName, items}) => {
                 {
                     items.map(item => {
                         return (
-                            <label class="filterCheckbox" id={`${item}Label`}>
+                            <label className="filterCheckbox" id={`${item}Label`}>
                                 <input type="checkbox" for={`${item}Label`}/>
                                 <span>{item}</span>
                             </label>
