@@ -60,9 +60,23 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://www.torontocupcake.com/)
 
-TODO
+This is an ecommerce website made using MERN web stack. It is the redesigned website of Toronto Cupcake which was made on Figma. Toronto Cupcake is a store that delivers cupcakes for different kinds of events in the GTA, Ontario. You can visit the original website by <a href='https://www.torontocupcake.com'>clicking on this link</a>.
+
+Purpose: 
+The project aims to redesign the Toronto Cupcake website that has an improved overall user experience, additional functionalities, more attractive and simplified cupcake purchases.
+
+
+Website is currently using:
+
+* **Axios** for frontend API request to backend
+* **Bcrypt** for authentication
+* **JSON Web Token** for user's token based authentication
+* **Cloudinary** for storing product images
+* **Express** for API routes
+* **Mongoose** for database schema
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -112,7 +126,7 @@ This is an example of how to list things you need to use the software and how to
     CLOUD_API_KEY =
     CLOUD_API_SECRET =
     ```
-5. In <b>client/package.json</b>, set up the port to link frontend to backend
+5. In `client/package.json` set up the port to link frontend to backend
    ```json
    "proxy": "http://localhost:PORT/"
    ```
@@ -149,7 +163,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Miguel Shelwyn Pe Benito - [LinkedIn Profile](https://www.linkedin.com/in/miguel-shelwyn-pe-benito/) - pebenitomiguel@gmail.com
+* Miguel Shelwyn Pe Benito - [LinkedIn Profile](https://www.linkedin.com/in/miguel-shelwyn-pe-benito/) - pebenitomiguel@gmail.com<br/>
+* Sebastian Molina Acosta - [LinkedIn Profile](https://www.linkedin.com/in/sebasacostaprogrammer/) - sacostamolin@gmail.com</li>
 
 Project Link: [https://github.com/ChiefMigz/ecommerce-website](https://github.com/ChiefMigz/ecommerce-website)
 
@@ -169,12 +184,12 @@ Project Link: [https://github.com/ChiefMigz/ecommerce-website](https://github.co
 [license-url]: https://github.com/ChiefMigz/ecommerce-website/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/miguel-shelwyn-pe-benito
-[product-screenshot]: images/screenshot.png
-[Express]: https://img.shields.io/badge/Express-ff0015?style=for-the-badge&logo=express&logoColor=white
-[Express-url]: https://img.shields.io/badge/ExpressJS-ff0015?style=for-the-badge&logo=express&logoColor=white
+[product-screenshot]: https://www.torontocupcake.com/images/main.webp
+[Express]: https://img.shields.io/badge/ExpressJS-ff0015?style=for-the-badge&logo=express&logoColor=white
+[Express-url]: https://expressjs.com
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [MongoDB]: https://img.shields.io/badge/MongoDB-red?style=for-the-badge&logo=mongodb&logoColor=green
-[MongoDB-url]: https://MongoDBjs.org/
+[MongoDB-url]: https://www.mongodb.com
 [NodeJS.io]: https://img.shields.io/badge/Node.js-green?style=for-the-badge&logo=nodedotjs&logoColor=white
-[NodeJS-url]: https://NodeJS.io/
+[NodeJS-url]: https://nodejs.org/en/
