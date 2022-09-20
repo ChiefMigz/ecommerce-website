@@ -45,7 +45,7 @@ const Login = () => {
                                 Remember
                                 <input type="checkbox"/>
                             </label>
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                             
                         </div>
                         <button type='submit'>Sign In</button>

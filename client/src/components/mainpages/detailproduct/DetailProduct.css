@@ -1,9 +1,9 @@
 .general
 {
-    display: flex;
-    width: 100%;
-    box-sizing: border-box;
-    height: 100%;
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  height: 100%;
 }
 
 .general .detailContent
@@ -63,7 +63,7 @@ font-weight: bolder;
 {
   box-shadow: 0 0 2px #ddd;
 }
-.general .detailContent .left .alacaklı label: nth-child(1)
+.general .detailContent .left .alacaklı label:nth-child(1)
 {
   
     content:  "+";
@@ -83,27 +83,25 @@ cursor: pointer;
 }
 .general .detailContent .left .alacaklı label
 {
-    cursor: pointer;
-    content:  "";
-    width:  40px;
-    height: 43px;
-    position:  absolute;
-    background:  #ddd;
-
+  cursor: pointer;
+  content:  "";
+  width:  40px;
+  height: 43px;
+  position:  absolute;
+  background:  #ddd;
   font-size: 30px;
-  
   line-height: 36px;
   text-align: center;
-    border-radius:  27%;
-    z-index:  1;
-    top:  5px;
+  border-radius:  27%;
+  z-index:  1;
+  top:  5px;
   right: 185px;
 }
 .general .detailContent .left .alacaklı button
 {
   padding: 20px 25px;
   width: 40%;
-      background:  rgb(249, 48, 66);
+  background:  rgb(249, 48, 66);
   color: #fff;
   transition: .5s all;
   border-radius: 10px;
@@ -111,7 +109,8 @@ cursor: pointer;
 }
 .general .detailContent .left .alacaklı button:hover {
   box-shadow: 0  0 16px rgb(249, 48, 66);
-transition: .5s all;}
+  transition: .5s all;
+}
 .general .detailContent .left .alacaklı i {
   margin-right: 10px;
 }
@@ -139,12 +138,12 @@ transition: .5s all;}
   position: absolute;
   cursor: pointer;
 }
-.general .detailContent .onz: before
+.general .detailContent .onz:before
 {
   content: "";
-    border: 2px solid #fff;
+  border: 2px solid #fff;
   width: 100%;
-top:  -2px;
+  top:  -2px;
   left: -2px;
   border-radius: 50%;
   position: absolute;
@@ -173,7 +172,7 @@ opacity: 1;  transition: .5s all;
     background: rgba(255,255,255, .70);
 }
 
-.tool-tip: before {
+.tool-tip:before {
   content: "";
   width: 0;
   height: 0;
@@ -200,15 +199,15 @@ opacity: 1;  transition: .5s all;
 .sepet {
   width: 45px;
   height: 45px;
-display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   position: relative;
-  background: #white;
+  background: white;
   
 }
-.sepet: before
+.sepet:before
 {
   content: "3";
   width: 50%;
@@ -226,10 +225,7 @@ display: flex;
   
   font-size: 25px;
 }
-#menuac
-{
- 
-}
+
 #openmenu
 {
   display: none;
@@ -248,7 +244,7 @@ font-size: 17px;
  box-shadow: 1px 1px 3px #000;
   transition: .5s;
 }
-#menuac: checked + .responsive-menu
+#menuac:checked + .responsive-menu
 {
   display: block;
 }
@@ -366,7 +362,7 @@ display: flex;
   visibility: hidden;
   transition: 2s all;
 }
-#sepet: checked  + .sepetim {
+#sepet:checked + .sepetim {
     visibility: visible;
     opacity: 1; 
     transition: 2s all;

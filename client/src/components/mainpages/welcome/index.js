@@ -17,14 +17,14 @@ const FirstScreen = ({handleClick}) => {
                 <h1>Welcome to Toronto Cupcake</h1>
             </div>
 
-            <div class="FS-row-2"> 
+            <div className="FS-row-2"> 
                 <h2> 
                     "We make cupcake <br/> from scratch"<br/>
                     <span><GiCupcake size={30}/></span>
                 </h2>
             </div>
 
-            <div class="FS-row-3"> 
+            <div className="FS-row-3"> 
                 <div> 
                     <button onClick={handleClick}>Get to know us</button>
                 </div>

@@ -2,7 +2,7 @@ const Product = require('../models/productModel')
 
 // Product filter, sorting and paginating
 
-class APIfeatures {
+className APIfeatures {
     constructor(query, queryString) {
         this.query = query; // Products to be show
         this.queryString = queryString // This is the filter for products received from request
@@ -46,7 +46,7 @@ const productCtrl = {
     getProducts: async(req, res) => {
         try {
             const features = new APIfeatures(Product.find(), req.query)
-            .filtering().sorting().paginating() // Call class member functions
+            .filtering().sorting().paginating() // Call className member functions
             const products = await features.query
 
             res.json({
