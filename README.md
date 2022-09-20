@@ -149,8 +149,10 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Miguel Shelwyn Pe Benito - [LinkedIn Profile](https://www.linkedin.com/in/miguel-shelwyn-pe-benito/) - pebenitomiguel@gmail.com
-Sebastian Acosta - [Github Profile](https://github.com/SebastianAc02) - sacostamolin@gmail.com
+<ul>
+  <li>Miguel Shelwyn Pe Benito - [LinkedIn Profile](https://www.linkedin.com/in/miguel-shelwyn-pe-benito/) - pebenitomiguel@gmail.com</li>
+  <li>Sebastian Acosta - [Github Profile](https://github.com/SebastianAc02) - sacostamolin@gmail.com</li>
+</ul>
 
 Project Link: [https://github.com/ChiefMigz/ecommerce-website](https://github.com/ChiefMigz/ecommerce-website)
 
