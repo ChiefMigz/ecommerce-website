@@ -60,9 +60,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://www.torontocupcake.com/)
 
-TODO
+This is an ecommerce website made using MERN web stack. It is the redesigned website of <a href='https://www.torontocupcake.com'>Toronto Cupcakes</a> which was made on Figma.
+
+Here's why:
+* Your time should be focused on creating something amazing. A project that solves a problem and helps others
+* You shouldn't be doing the same tasks over and over like creating a README from scratch
+* You should implement DRY principles to the rest of your life :smile:
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -149,8 +156,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Miguel Shelwyn Pe Benito - [LinkedIn Profile](https://www.linkedin.com/in/miguel-shelwyn-pe-benito/) - pebenitomiguel@gmail.com<br/>
-Sebastian Acosta - [Github Profile](https://github.com/SebastianAc02) - sacostamolin@gmail.com</li>
+* Miguel Shelwyn Pe Benito - [LinkedIn Profile](https://www.linkedin.com/in/miguel-shelwyn-pe-benito/) - pebenitomiguel@gmail.com<br/>
+* Sebastian Molina Acosta - [Github Profile](https://github.com/SebastianAc02) - sacostamolin@gmail.com</li>
 
 Project Link: [https://github.com/ChiefMigz/ecommerce-website](https://github.com/ChiefMigz/ecommerce-website)
 
@@ -170,7 +177,7 @@ Project Link: [https://github.com/ChiefMigz/ecommerce-website](https://github.co
 [license-url]: https://github.com/ChiefMigz/ecommerce-website/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/miguel-shelwyn-pe-benito
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: https://www.torontocupcake.com/images/main.webp
 [Express]: https://img.shields.io/badge/ExpressJS-ff0015?style=for-the-badge&logo=express&logoColor=white
 [Express-url]: https://expressjs.com
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
