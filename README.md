@@ -170,11 +170,11 @@ Project Link: [https://github.com/ChiefMigz/ecommerce-website](https://github.co
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/miguel-shelwyn-pe-benito
 [product-screenshot]: images/screenshot.png
-[Express]: https://img.shields.io/badge/Express-ff0015?style=for-the-badge&logo=express&logoColor=white
-[Express-url]: https://img.shields.io/badge/ExpressJS-ff0015?style=for-the-badge&logo=express&logoColor=white
+[Express]: https://img.shields.io/badge/ExpressJS-ff0015?style=for-the-badge&logo=express&logoColor=white
+[Express-url]: https://expressjs.com
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [MongoDB]: https://img.shields.io/badge/MongoDB-red?style=for-the-badge&logo=mongodb&logoColor=green
-[MongoDB-url]: https://MongoDBjs.org/
+[MongoDB-url]: https://www.mongodb.com
 [NodeJS.io]: https://img.shields.io/badge/Node.js-green?style=for-the-badge&logo=nodedotjs&logoColor=white
-[NodeJS-url]: https://NodeJS.io/
+[NodeJS-url]: https://nodejs.org/en/
