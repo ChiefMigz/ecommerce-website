@@ -155,10 +155,6 @@ Project Link: [https://github.com/ChiefMigz/ecommerce-website](https://github.co
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/chiefmigz/ecommerce-website.svg?style=for-the-badge
