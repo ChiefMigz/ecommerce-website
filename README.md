@@ -62,7 +62,10 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://www.torontocupcake.com/)
 
-This is an ecommerce website made using MERN web stack. It is the redesigned website of <a href='https://www.torontocupcake.com'>Toronto Cupcakes</a> which was made on Figma.
+This is an ecommerce website made using MERN web stack. It is the redesigned website of <a href='https://www.torontocupcake.com'>Toronto Cupcake</a> which was made on Figma. <a href='https://www.torontocupcake.com'>Toronto Cupcakes</a> is a store that delivers cupcakes for different kinds of events in the GTA, Ontario.
+
+Purpose: 
+The project aims to redesign the <a href='https://www.torontocupcake.com'>Toronto Cupcake</a> website that has improved overall user experience, additional functionalities, more attractive and simplified cupcake purchases.
 
 Website backend is currently using
 * **Axios** for frontend API request
