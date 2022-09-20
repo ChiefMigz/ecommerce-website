@@ -104,7 +104,7 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    npm install
    ```
-3. Generate .env file by typing the command `touch .env` in bash or by just manually creating the file, type the following and then configure the parameters
+3. Generate .env file by typing the command `touch .env` in bash or by just manually creating the file, type the following and then configure the parameters. Please be advised that a Cloudinary and MongoDB account is required
     ```env
     ACCESS_TOKEN_SECRET = 
     REFRESH_TOKEN_SECRET = 
