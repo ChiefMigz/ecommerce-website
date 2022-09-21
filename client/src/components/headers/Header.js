@@ -60,7 +60,7 @@ const Header = () => {
             </div>
             <div style={{display: profileOverlay ? 'block' : 'none'}}><ProfileOverlay/></div>
                 {/* Mobile Menu */}
-            <div id={nav ? 'menu-mobile' : 'hidden'}>
+            <div className={nav ? 'menuMobile' : 'hidden'}>
                 <span onClick={() => setNav(!nav)}>x</span>
                 <ul>
                     <li onClick={() => setNav(!nav)}>

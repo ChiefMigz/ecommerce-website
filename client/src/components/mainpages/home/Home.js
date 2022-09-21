@@ -1,8 +1,8 @@
 import { useState } from "react";
-import ProductsAPI from "../../../api/ProductsAPI";
+//import ProductsAPI from "../../../api/ProductsAPI";
 import ModalPortal from "../utils/modals/Modal";
 import PostalCodeForm from "../utils/modals/delivery/PostalCode";
-import Welcome from "../welcome";
+import Welcome from "../utils/welcome";
 
 const Home = () => {
 
@@ -14,12 +14,12 @@ const Home = () => {
     }
 
     return ( 
-
-       <div>
-        <Welcome/>
-        {showModal &&  <ModalPortal onClose={handleClose}> <PostalCodeForm showmodal={setShowModal}/></ModalPortal>}
-    
-       </div>
+      <>
+      <Welcome/>
+      <main>
+      {showModal &&  <ModalPortal onClose={handleClose}> <PostalCodeForm showmodal={setShowModal}/></ModalPortal>}
+      </main>
+      </>
      );
 }
  

@@ -28,7 +28,7 @@ const Login = () => {
     }
 
     return ( 
-        <div>
+        <main>
             <div className="login-container" id="login-container">
                 
                 <div className="form-container sign-in-container">
@@ -52,7 +52,7 @@ const Login = () => {
                     </form>
                 </div>
             </div>
-        </div>
+        </main>
      );
 }
  

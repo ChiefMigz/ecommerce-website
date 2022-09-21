@@ -18,12 +18,13 @@ const Products = () => {
     }
 
     return (
-        <div>
-            <span className='marginContent' id='title'>
+        <>
+        <main>
+            <span id='title'>
                 <h1>Always Available</h1>
             </span>
             
-            <div id='containerRow'>
+            <div className='containerRow'>
                 <FilterComponent/>
                 <div className='cupcakeContainer'>
                 {products.length === 0 && <Loading />}
@@ -38,7 +39,8 @@ const Products = () => {
             </div>
             
             
-        </div>
+        </main>
+        </>
      );
      
 }
