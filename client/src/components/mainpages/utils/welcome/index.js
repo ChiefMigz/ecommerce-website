@@ -3,8 +3,7 @@ import { useState } from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { FaCartPlus } from "react-icons/fa";
 import { GiCupcake } from "react-icons/gi";
-import './index.css';
-import '../utils/productitem/ProductItem.css';
+import '../../../../index.css';
 
 
 //css prefix FirstSc
