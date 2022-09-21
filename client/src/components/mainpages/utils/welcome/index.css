@@ -8,19 +8,20 @@
   }
 
   .fsItem1 {
-    background-image: url('../../../../public/CupcakeWelcomeImage.png');
+    background-image: url('CupcakeWelcomeImage.png');
     background-repeat: no-repeat;
   }
 
   .fsItem2 {
     background: linear-gradient(106.13deg, #F0E4D7 0.65%, #FDDAB5 69.47%, #F6A6C0 100%);
+    
   }
   
   .fsControl {
     display: flex;
     position: relative;
     height: 100vh;
-    width: 5vw; /* A fixed width as the default */
+    width: 4vw; /* A fixed width as the default */
     align-items: center;
     justify-content: center;
    
@@ -30,7 +31,10 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    margin-left: 4%;
+    margin-top: 4%;
   }
+
   
   .FS-item-center > div{
     flex: 1;
@@ -67,7 +71,8 @@
 .SS-item-center { 
   flex-grow: 1;
   display: grid;
-  margin-top: 25vh;
+  margin-top: 7%;
+  
 }
   .FS-row-1 {
     font-size: 1.5rem;
@@ -75,7 +80,9 @@
   .FS-row-2 {
     font-size: 1.5rem;
     margin-top: 0;
+    text-align: center;
   }
+  
   
   .SS-img{
   width: 100%;

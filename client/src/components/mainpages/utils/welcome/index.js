@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { FaCartPlus } from "react-icons/fa";
 import { GiCupcake } from "react-icons/gi";
-import '../../../../index.css';
+import './index.css';
 
 
 //css prefix FirstSc
@@ -19,7 +19,7 @@ const FirstScreen = ({handleClick}) => {
             <div class="FS-row-2"> 
                 <h2> 
                     "We make cupcake <br/> from scratch"<br/>
-                    <span><GiCupcake size={30}/></span>
+                    <GiCupcake size={50}/>
                 </h2>
             </div>
 
