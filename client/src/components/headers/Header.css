@@ -13,6 +13,7 @@
     .menuMobile {
         display: none;
     }
+
     .navbarLinks {
         padding: 0;
         vertical-align: top;
@@ -78,6 +79,7 @@
                 padding: 3px 5px;
                 font-size: 10px;
             }
+
             .cart-btn {
                 display: none;
             }
@@ -85,6 +87,22 @@
         .bars {
             display: none; 
         }
+.infoBanner {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+    width: 100%;
+    background-color: #AA0000 ;
+    height: 40px;
+    color: white;
+    margin-top: 90px;
+    text-decoration: underline;
+    padding-top: 5px;
+}
+    .infoBanner h3 {
+        margin-top: 2px;
+    }
         
 @media only screen and (max-width: 900px) {
     .container {

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import ProfileOverlay from './overlays/ProfileOverlay';
 import {useState} from 'react';
 //import {GlobalState} from '../../GlobalState';
-import {FaShoppingCart, FaUserAlt, FaLocationArrow, FaBars} from 'react-icons/fa';
+import {FaShoppingCart, FaUserAlt, FaLocationArrow, FaBars, FaExclamationTriangle} from 'react-icons/fa';
 import Logo from './icons/icon.png'
 
 const Header = () => {  
@@ -12,8 +12,9 @@ const Header = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setProfileOverlay(!profileOverlay);
     return (
+        <>
         <div className='navbarContainer'>
-            {/* Mobile Display Nav Button */}
+            { /* Mobile Display Nav Button */ }
             <div className='bars' onClick={() => setNav(!nav)}>
                 <FaBars size={30}/>
             </div>
@@ -78,6 +79,11 @@ const Header = () => {
                 </ul>
             </div>
         </div>
+        <div className='infoBanner'>
+            <FaExclamationTriangle color={'yellow'} size={30}/>     
+            <h3>COVID-19 Protocol and Information</h3>
+        </div>
+        </>
     );
 }
  
