@@ -24,7 +24,7 @@ const Products = () => {
                 <h1>Always Available</h1>
             </span>
             
-            <div id='containerRow'>
+            <div className='containerRow'>
                 <FilterComponent/>
                 <div className='cupcakeContainer'>
                 {products.length === 0 && <Loading />}
