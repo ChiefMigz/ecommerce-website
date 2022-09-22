@@ -27,7 +27,7 @@
             color: #333333;
             font-size: 21pt;
             font-weight: bold;
-            padding: 1.8rem 1.5rem 1.8rem 1.5rem;
+            padding: 1.7rem 1.5rem 1.6rem 1.5rem;
         }
 
         .navbarLinks a:hover {
@@ -88,6 +88,9 @@
     .container {
         column-gap: 37vw;
         width: 100vw;
+    }
+    .navbarLinks {
+        display: none;
     }
     .menu {
         display: none;
