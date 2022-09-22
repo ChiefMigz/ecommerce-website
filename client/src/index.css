@@ -1,5 +1,4 @@
 * {
-  margin: 0;
 	box-sizing: border-box;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -17,9 +16,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  margin-top: 15vh;
-  margin-left: 20px;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
 #title {
@@ -54,10 +53,13 @@ main {
   width: 100%;
 }
 
-
-
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+main {
+  margin-top: 15vh;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -77,7 +79,7 @@ main {
     letter-spacing: 0.5pt;
 
   }
-  .containerRow {
+  #containerRow {
     width: 100vw;
   }
 }
