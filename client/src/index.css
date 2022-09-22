@@ -49,9 +49,16 @@ code {
 
 .containerRow {
   display: flex;
-  flex-flow: row wrapped;
+  flex-flow: row;
   width: 100%;
 }
+
+.containerColumn {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
 
 .hidden {
   display: none !important;
