@@ -20,7 +20,7 @@ const Products = () => {
     return (
         <>
         <main>
-            <span id='title'>
+            <span className='title'>
                 <h1>Always Available</h1>
             </span>
             

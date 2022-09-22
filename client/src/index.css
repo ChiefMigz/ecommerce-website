@@ -1,5 +1,4 @@
 * {
-  margin: 0;
 	box-sizing: border-box;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -17,12 +16,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
-  margin-top: 15vh;
-  margin-left: 20px;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 
-#title {
+.title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,7 +33,7 @@ main {
   margin-bottom: 30px;
 }
 
-#title h1 {
+.title h1 {
   color:  #E91E63;
   font-size: 40pt;
   margin-bottom: 10px;
@@ -50,14 +49,24 @@ main {
 
 .containerRow {
   display: flex;
-  flex-flow: row wrapped;
+  flex-flow: row;
+  width: 100%;
+}
+
+.containerColumn {
+  display: flex;
+  flex-flow: column;
   width: 100%;
 }
 
 
-
 .hidden {
-  display: none;
+  display: none !important;
+}
+
+main {
+  margin-top: 15vh;
+  margin-left: 20px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -77,7 +86,7 @@ main {
     letter-spacing: 0.5pt;
 
   }
-  .containerRow {
+  #containerRow {
     width: 100vw;
   }
 }
