@@ -21,7 +21,7 @@ code {
     monospace;
 }
 
-#title {
+.title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,7 @@ code {
   margin-bottom: 30px;
 }
 
-#title h1 {
+.title h1 {
   color:  #E91E63;
   font-size: 40pt;
   margin-bottom: 10px;
