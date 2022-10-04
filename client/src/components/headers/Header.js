@@ -4,12 +4,14 @@ import Overlay from './overlays/Overlay';
 import {useState} from 'react';
 //import {GlobalState} from '../../GlobalState';
 import {FaShoppingCart, FaUserAlt, FaLocationArrow, FaBars} from 'react-icons/fa';
-import Logo from './icons/icon.png'
+import Logo from './icons/icon.png';
+
+// TODO: Dropdown
 
 const Header = () => {  
     //const value = useContext(GlobalState)
     const [overlay, setOverlay] = useState(false);
-    const [items, setItems] = useState(['Sign In', 'Sign Up'])
+    const [items, setItems] = useState(['Sign In', 'Sign Up']) // Todo
     const [nav, setNav] = useState(false);
     const handleClick = () => setOverlay(!overlay);
     return (
