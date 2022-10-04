@@ -2,9 +2,9 @@
     background-color: #F5C0C0;
     padding: 20px;
     width: 100%;
+    height: 90px;
     display: flex;
     align-items: center;
-    height: 90px;
     position: fixed;
     z-index: 200;
     top: 0;
@@ -17,25 +17,32 @@
     .navbarLinks {
         padding: 0;
         vertical-align: top;
+        align-items: stretch;
         margin-left: auto;
         text-align: center;
-        height: fit-content;
+        height: 90px;
         width: fit-content;
     }
         .navbarLinks a {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
             text-decoration: none;
             color: #333333;
             font-size: 1.8rem;
             font-weight: bold;
-            padding: 1.80rem 1.6rem 1.75rem 1.6rem;
+            padding-left: 1.6rem;
+            padding-right: 1.6rem;
         }
-
         .navbarLinks a:hover {
             background-color: #E91E63;
         }
 
         .navbarLinks ul {
             display: flex;
+            height: 100%;
+            align-items: stretch;
             flex-flow: row wrapped;
             flex-wrap: wrap;
             list-style: none;
@@ -87,22 +94,6 @@
         .bars {
             display: none; 
         }
-.infoBanner {
-    display: flex;
-    flex-direction: row;
-    column-gap: 20px;
-    justify-content: center;
-    width: 100%;
-    background-color: #AA0000 ;
-    height: 40px;
-    color: white;
-    margin-top: 90px;
-    text-decoration: underline;
-    padding-top: 5px;
-}
-    .infoBanner h3 {
-        margin-top: 2px;
-    }
         
 @media only screen and (max-width: 900px) {
     .container {

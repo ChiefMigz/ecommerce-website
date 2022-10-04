@@ -1,16 +1,17 @@
 import '../../index.css';
 import { Link } from 'react-router-dom';
-import ProfileOverlay from './overlays/ProfileOverlay';
+import Overlay from './overlays/Overlay';
 import {useState} from 'react';
 //import {GlobalState} from '../../GlobalState';
-import {FaShoppingCart, FaUserAlt, FaLocationArrow, FaBars, FaExclamationTriangle} from 'react-icons/fa';
+import {FaShoppingCart, FaUserAlt, FaLocationArrow, FaBars} from 'react-icons/fa';
 import Logo from './icons/icon.png'
 
 const Header = () => {  
     //const value = useContext(GlobalState)
-    const [profileOverlay, setProfileOverlay] = useState(false);
+    const [overlay, setOverlay] = useState(false);
+    const [items, setItems] = useState(['Sign In', 'Sign Up'])
     const [nav, setNav] = useState(false);
-    const handleClick = () => setProfileOverlay(!profileOverlay);
+    const handleClick = () => setOverlay(!overlay);
     return (
         <>
         <div className='navbarContainer'>
@@ -59,7 +60,7 @@ const Header = () => {
                     <FaLocationArrow size ={32}/>
                 </div>
             </div>
-            <div style={{display: profileOverlay ? 'block' : 'none'}}><ProfileOverlay/></div>
+            {overlay && <Overlay choices={items}/>}
                 {/* Mobile Menu */}
             <div className={nav ? 'menuMobile' : 'hidden'}>
                 <span onClick={() => setNav(!nav)}>x</span>
@@ -78,10 +79,6 @@ const Header = () => {
                     </li>
                 </ul>
             </div>
-        </div>
-        <div className='infoBanner'>
-            <FaExclamationTriangle color={'yellow'} size={30}/>     
-            <h3>COVID-19 Protocol and Information</h3>
         </div>
         </>
     );
