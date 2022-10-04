@@ -15,14 +15,14 @@ const Home = () => {
       setShowModal(!showModal)
     }
     return ( 
-      <>
-      <div className='infoBanner'>
-            <FaExclamationTriangle color={'yellow'} size={30}/>     
-            <h3>COVID-19 Protocol and Information</h3>
+      <div className='marginTop'>
+        <div className='infoBanner'>
+              <FaExclamationTriangle color={'yellow'} size={30}/>     
+              <h3>COVID-19 Protocol and Information</h3>
+        </div>
+        <Welcome/>
+        {showModal &&  <ModalPortal onClose={handleClose}> <PostalCodeForm showmodal={setShowModal}/></ModalPortal>}
       </div>
-      <Welcome/>
-      {showModal &&  <ModalPortal onClose={handleClose}> <PostalCodeForm showmodal={setShowModal}/></ModalPortal>}
-      </>
      );
 }
  

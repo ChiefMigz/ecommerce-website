@@ -27,7 +27,6 @@ const FirstScreen = ({handleClick}) => {
                 <div> 
                     <button onClick={handleClick}>Get to know us</button>
                 </div>
-                <div></div>
             </div>
           
 
@@ -75,9 +74,9 @@ const Welcome = () => {
 
     return (
         <div className={`${carousel? 'fsItem1':'fsItem2'} slideShowContainer`}> {/* contaoner : toggle la clase para cambiar el bg*/ }
-            <div onClick={handleChange} className="fsControl" > <IoIosArrowBack size={80}/> </div>
+            <div onClick={handleChange} className="fsControl" ><IoIosArrowBack size={70}/></div>
                 {carousel? <FirstScreen/> : <SecondScreen/>}
-            <div onClick={handleChange} className="fsControl"> <IoIosArrowForward size={80}/> </div>
+            <div onClick={handleChange} className="fsControl"><IoIosArrowForward size={70}/></div>
         </div>
     )
 }

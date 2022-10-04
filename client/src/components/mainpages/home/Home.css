@@ -8,7 +8,6 @@
     background-color: #AA0000 ;
     height: 40px;
     color: white;
-    margin-top: 90px;
     margin-bottom: 0;
     text-decoration: underline;
     padding-top: 5px;
@@ -16,3 +15,6 @@
     .infoBanner h3 {
         margin-top: 2px;
     }
+.marginTop {
+    margin-top: 90px;
+} 
