@@ -1,12 +1,41 @@
 .overlay {
     position: absolute; /* Sit on top of the page content */
     width: 12%; /* Full width (cover the whole page) */
-    height: 300px; /* Full height (cover the whole page) */
-    top: 101px; 
+    height: 300px; 
+    top: 90px; 
     left: 88%;
+    border: 2px solid black;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    background-color: #f5c0c0; /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
+    padding: 0;
+    vertical-align: top;
+    margin-left: auto;
+    text-align: center;
+    height: fit-content;
+    padding-bottom: 27px;
 }
+
+    .overlay a {
+        text-decoration: none;
+        color: #333333;
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding: 1.80rem 1.6rem 1.75rem 1.6rem;
+    }
+
+    .overlay a:hover {
+        background-color: #E91E63;
+    }
+
+    .overlay ul {
+        display: flex;
+        flex-flow: row wrapped;
+        row-gap: 60px;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+
+
