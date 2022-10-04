@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 4%;
-    margin-top: 4%;
+    margin-top: 7%;
   }
 
   
@@ -51,12 +51,10 @@
   .slideShowContainer button{
     width: fit-content;
     height: fit-content;
-    position: relative;
     display: flex;
-    flex-flow: row wrap;
-    gap: 10px;
+    flex-flow: row;
     padding: 20px 35px;
-    margin-top: 15px;
+    margin-top: 20px;
     color: #ffffff;
     text-decoration: none;
     background: #FF3073;
@@ -66,6 +64,11 @@
     border-style: none;
     font-size: 1.5rem;
     text-align: center;
+  }
+
+  .slideShowContainer button:hover {
+    background-color: #E91E63;
+    
   }
 
 .SS-item-center { 
@@ -83,13 +86,12 @@
     text-align: center;
   }
   
-  
   .SS-img{
   width: 100%;
   height: 100%;
   }
   
-  .SS-button{
+  .SS-button {
     width: 20vw;
     height: 10vh;
     border-radius: 5px;
@@ -97,6 +99,7 @@
     font-size: large;
     background-color: #FF3073;
   }
+
   /*column1 y column 2 */
   
   .SS-item-center > div {
