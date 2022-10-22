@@ -11,7 +11,6 @@ import Logo from './icons/icon.png';
 const Header = () => {  
     //const value = useContext(GlobalState)
     const [overlay, setOverlay] = useState(false);
-    const [items, setItems] = useState(['Sign In', 'Sign Up']) // Todo
     const [nav, setNav] = useState(false);
     const handleClick = () => setOverlay(!overlay);
     return (
@@ -55,15 +54,16 @@ const Header = () => {
                     <span>0</span>
                     <FaShoppingCart size={32}/>
                 </div>
-                <div onClick={() => handleClick()}>
-                    <FaUserAlt size={32}/>
+                <div>
+                    <FaUserAlt onClick={() => handleClick()} size={32}/>
+                    {overlay && <Overlay choices={['Sign In', 'Sign Up']} onClick={handleClick}/>}
                 </div>
                 <div className='location-icon'>
                     <FaLocationArrow size ={32}/>
                 </div>
             </div>
-            {overlay && <Overlay choices={items}/>}
-                {/* Mobile Menu */}
+
+            {/* Mobile Menu */}
             <div className={nav ? 'menuMobile' : 'hidden'}>
                 <span onClick={() => setNav(!nav)}>x</span>
                 <ul>

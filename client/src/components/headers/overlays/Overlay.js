@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import '../../../index.css';
-
 const ProfileOverlay = (props) => {
+    {/* style={{right: `${props.location}`}} */}
     return ( 
         <div className='overlay'>
             <ul>

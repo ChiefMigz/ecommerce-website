@@ -1,9 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
-* {
-	box-sizing: border-box;
-}
 form {
 	background-color: #FFFFFF;
 	display: flex;
@@ -62,9 +59,8 @@ input {
 	}
 
 	.form-container a {
-		color: #333;
+		color: #D07474;
 		font-size: 14px;
-		text-decoration: none;
 		margin: 15px 0;
 	}
 
@@ -92,6 +88,26 @@ input {
 	.form-container button.ghost {
 		background-color: transparent;
 		border-color: #FFFFFF;
+	}
+
+	.controlContainer {
+		display: flex;
+		flex-flow: row wrap;
+		max-width: 80%;
+		column-gap: 11rem;
+	}
+
+	.controlContainer label {
+		display: flex;
+		column-gap: 10px;
+		width: fit-content;
+		
+	}
+
+	.controlContainer input {
+		padding: 0;
+		margin: 0;
+		width: 15px;
 	}
 
 .login-container {

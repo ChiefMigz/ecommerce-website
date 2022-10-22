@@ -22,7 +22,62 @@ code {
 }
 
 main {
-  margin: 15vh auto;
+  margin: 15vh 1.5vw;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  background-color: #F5C0C0;
+  flex-flow: row wrap;
+  padding: 20px 70px;
+  column-gap: 24%;
+}
+
+footer h3 {
+  font-size: 2rem;
+}
+
+footer ul {
+  display: flex;
+  flex-flow: column wrap;
+  row-gap: 8px;
+  list-style: none;
+  color: black;
+}
+
+footer ul span {
+  display: flex;
+  width: fit-content;
+  flex-shrink: 3;
+  flex-flow: row wrap;
+  margin-right: 5px;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer p {
+  margin-left: 2px;
+  line-height: 40px;
+}
+
+footer .left {
+  width: fit-content;
+}
+
+footer .center {
+  width: fit-content;
+  text-align: center;
+}
+
+footer .right {
+  width: fit-content;
+}
+
+.socialLinks {
+  margin-top: 10px;
 }
 
 .title {

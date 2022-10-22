@@ -39,13 +39,13 @@ const Login = () => {
                             value={user.email} onChange={onChangeInput}/>
                          <input type="password" name="password" required autoComplete="on"
                             placeholder="Password" value={user.password} onChange={onChangeInput} />
-                        <div>
-                            <a href='/'>Forgot Password</a>
+                        <div className='controlContainer'>
                             <label>
-                                Remember
+                                <p>Remember</p>
                                 <input type="checkbox"/>
                             </label>
                             <span class="checkmark"></span>
+                            <a href='/'>Forgot Password</a>
                             
                         </div>
                         <button type='submit'>Sign In</button>
