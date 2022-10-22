@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FaExclamationTriangle } from 'react-icons/fa';
 //import ProductsAPI from '../../../api/ProductsAPI';
 import ModalPortal from '../utils/modals/Modal';
@@ -9,11 +9,24 @@ import './Home.css';
 const Home = () => {
 
 
-    const [showModal, setShowModal ] = useState( true )
+    const [showModal, setShowModal ] = useState( false )
 
     const handleClose = () =>{
       setShowModal(!showModal)
     }
+
+    useEffect(() => {
+      const popupModalValue = localStorage.getItem("popupModal")
+      if (!popupModalValue) {
+        const timer = setTimeout(() => {
+          setShowModal(true);
+          localStorage.setItem("popupModal", "1");
+        }, 2000);
+    
+        return () => clearTimeout(timer);
+      }
+    }, []);
+
     return ( 
       <div className='marginTop'>
         <div className='infoBanner'>
