@@ -6,6 +6,10 @@
     border-radius: 8px;
     overflow: visible;
   }
+
+  .card a {
+    text-decoration: none;
+  }
     
   .card:hover {
     background-color: #FFE4E4;

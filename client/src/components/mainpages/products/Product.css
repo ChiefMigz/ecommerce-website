@@ -1,14 +1,9 @@
 .cupcakeContainer {
     padding-top: 100px;
-    gap: 12vh 2vw;
+    gap: 12vh 4vw;
     display: flex;
     flex-flow: row wrap;
-    width: 100%;
-
-}
-
-.card a {
-    text-decoration: none;
+    width: fit-content;
 }
 
 @media only screen and (max-width: 900px) {
