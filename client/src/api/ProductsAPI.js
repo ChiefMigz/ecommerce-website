@@ -9,7 +9,7 @@ const ProductsAPI = () => {
     const [search, setSearch] = useState('')
     const [page, setPage] = useState(1)
     const [result, setResult] = useState(0)
-    const API_HOST = 'https://cupcake-website-backend.herokuapp.com'
+    const API_HOST = 'https://ecommerce-website-psi-rust.vercel.app'
 
     useEffect(() =>{
         const getProducts = async () => {

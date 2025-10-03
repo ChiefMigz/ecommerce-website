@@ -6,7 +6,7 @@ function UserAPI(token) {
     const [isAdmin, setIsAdmin] = useState(false)
     const [cart, setCart] = useState([])
     const [history, setHistory] = useState([])
-    const API_HOST = 'https://cupcake-website-backend.herokuapp.com'
+    const API_HOST = 'https://cupcake-website-backend.app.com'
 
     useEffect(() => {
         if (token){
